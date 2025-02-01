@@ -134,5 +134,5 @@ text = "Add new task!!"
 [connection signal="item_selected" from="OptionButton" to="OptionButton" method="_on_item_selected"]
 [connection signal="item_selected" from="ColorRect/OptionButton" to="OptionButton" method="_on_option_button_item_selected"]
 [connection signal="item_selected" from="ColorRect/OptionButton2" to="OptionButton" method="_on_option_button_2_item_selected"]
-[connection signal="item_selected" from="ColorRect/OptionButton3" to="OptionButton" method="_on_option_button_3_item_selected"]
 [connection signal="item_selected" from="ColorRect/OptionButton3" to="OptionButton" method="_on_option_button_2_item_selected"]
+[connection signal="item_selected" from="ColorRect/OptionButton3" to="OptionButton" method="_on_option_button_3_item_selected"]
