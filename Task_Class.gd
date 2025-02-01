@@ -18,7 +18,6 @@ func set_task(task_name: String, task_class: String, task_type: String, start_ti
 	self.end_time = end_time
 	self.completed = completed
 	self.initiated = true
-	
 
 # Converts to a string (will be used for save file)
 func _to_string() -> String:
@@ -31,7 +30,6 @@ func _to_string() -> String:
 static func get_task_from_string(task_string: String) -> Task:
 	var split : PackedStringArray = task_string.split("\n\t")
 	var new_task: Task = Task.new()
-	print("Split 5:%s"%split[5])
 	new_task.set_task(split[0], split[1], split[2], int(split[3]), int(split[4]), split[5].rstrip("\n") == "true")
 	
 	return new_task
