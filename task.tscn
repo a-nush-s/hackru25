@@ -1,0 +1,90 @@
+[gd_scene load_steps=4 format=3 uid="uid://dlut71swxs55i"]
+
+[ext_resource type="FontFile" uid="uid://dfvkfjugp4cx1" path="res://Martian_Mono/MartianMono-VariableFont_wdth,wght.ttf" id="1_s2pc3"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_rvcn7"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f3wfj"]
+bg_color = Color(1, 0.85098, 0.4, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="task" type="Control"]
+material = SubResource("CanvasItemMaterial_rvcn7")
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 123.0
+offset_top = 46.0
+offset_right = 87.0
+offset_bottom = -569.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CheckBox" type="CheckBox" parent="."]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 3.0
+offset_right = 30.0
+offset_bottom = 27.0
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 433.0
+offset_top = 2.0
+offset_right = 592.0
+offset_bottom = 33.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_f3wfj")
+
+[node name="Panel2" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 610.0
+offset_top = 2.0
+offset_right = 769.0
+offset_bottom = 33.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_f3wfj")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 35.0
+offset_top = 5.0
+offset_right = 292.0
+offset_bottom = 28.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_s2pc3")
+text = "name of task (max 32 characters)"
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 447.0
+offset_top = 7.0
+offset_right = 574.0
+offset_bottom = 30.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_s2pc3")
+text = "class name"
+
+[node name="Label3" type="Label" parent="."]
+layout_mode = 0
+offset_left = 622.0
+offset_top = 7.0
+offset_right = 749.0
+offset_bottom = 30.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_s2pc3")
+text = "type name"
+
+[node name="Label4" type="Label" parent="."]
+layout_mode = 0
+offset_left = 789.0
+offset_top = 8.0
+offset_right = 916.0
+offset_bottom = 31.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_s2pc3")
+text = "date/time"
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
