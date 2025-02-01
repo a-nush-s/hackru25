@@ -14,3 +14,7 @@ config/name="HackRU2025"
 run/main_scene="res://task.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
+
+[rendering]
+
+environment/defaults/default_clear_color=Color(1, 1, 1, 1)
