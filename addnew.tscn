@@ -1,0 +1,138 @@
+[gd_scene load_steps=3 format=3 uid="uid://c26uw0q68rax3"]
+
+[ext_resource type="Script" path="res://option_button.gd" id="1_3ap6f"]
+[ext_resource type="Script" path="res://option_button_3.gd" id="2_25adc"]
+
+[node name="addnew" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="OptionButton" type="OptionButton" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 3.0
+offset_top = 2.0
+offset_right = 165.0
+offset_bottom = 60.0
+alignment = 1
+selected = 0
+item_count = 4
+popup/item_0/text = "Sort By"
+popup/item_1/text = "Task"
+popup/item_1/id = 1
+popup/item_2/text = "Class"
+popup/item_2/id = 2
+popup/item_3/text = "Type"
+popup/item_3/id = 3
+script = ExtResource("1_3ap6f")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.09
+anchor_bottom = 0.5
+offset_left = -18.0
+offset_top = -17.0
+offset_right = 1025.32
+offset_bottom = 306.0
+color = Color(0.81, 0.81, 0.81, 1)
+
+[node name="Label" type="Label" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.218
+anchor_bottom = 0.261
+offset_left = 20.0
+offset_top = 141.0
+offset_right = 109.954
+offset_bottom = 58.133
+theme_override_font_sizes/font_size = 45
+text = "Input Task 1:"
+
+[node name="OptionButton" type="OptionButton" parent="ColorRect"]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 243.0
+offset_right = 660.0
+offset_bottom = 336.0
+theme_override_font_sizes/font_size = 50
+selected = 0
+item_count = 6
+popup/item_0/text = "select class"
+popup/item_1/text = "psych theories in film"
+popup/item_1/id = 1
+popup/item_2/text = "infant child development"
+popup/item_2/id = 2
+popup/item_3/text = "computer architecture"
+popup/item_3/id = 3
+popup/item_4/text = "gen physics"
+popup/item_4/id = 4
+popup/item_5/text = "sensation and perception"
+popup/item_5/id = 5
+script = ExtResource("1_3ap6f")
+
+[node name="OptionButton2" type="OptionButton" parent="ColorRect"]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 369.0
+offset_right = 665.0
+offset_bottom = 462.0
+theme_override_font_sizes/font_size = 50
+selected = 0
+item_count = 6
+popup/item_0/text = "select type"
+popup/item_1/text = "written assignment"
+popup/item_1/id = 1
+popup/item_2/text = "exam"
+popup/item_2/id = 2
+popup/item_3/text = "quiz"
+popup/item_3/id = 3
+popup/item_4/text = "project"
+popup/item_4/id = 4
+popup/item_5/text = "discussion"
+popup/item_5/id = 5
+
+[node name="OptionButton3" type="OptionButton" parent="ColorRect"]
+visible = false
+layout_mode = 0
+offset_left = 17.0
+offset_top = 501.0
+offset_right = 665.0
+offset_bottom = 594.0
+theme_override_font_sizes/font_size = 50
+selected = 0
+item_count = 3
+popup/item_0/text = "select schedule"
+popup/item_1/text = "date"
+popup/item_1/id = 1
+popup/item_2/text = "time"
+popup/item_2/id = 2
+script = ExtResource("2_25adc")
+
+[node name="Label2" type="Label" parent="ColorRect"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Label4" type="Label" parent="."]
+layout_mode = 0
+offset_left = -5.0
+offset_top = -5.0
+offset_right = 125.0
+offset_bottom = 43.0
+theme_override_font_sizes/font_size = 50
+text = "Add new task!!"
+
+[connection signal="item_selected" from="OptionButton" to="OptionButton" method="_on_item_selected"]
+[connection signal="item_selected" from="ColorRect/OptionButton" to="OptionButton" method="_on_option_button_item_selected"]
+[connection signal="item_selected" from="ColorRect/OptionButton2" to="OptionButton" method="_on_option_button_2_item_selected"]
+[connection signal="item_selected" from="ColorRect/OptionButton3" to="OptionButton" method="_on_option_button_3_item_selected"]
+[connection signal="item_selected" from="ColorRect/OptionButton3" to="OptionButton" method="_on_option_button_2_item_selected"]
