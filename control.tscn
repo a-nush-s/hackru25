@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://option_button.gd" id="1_sv63c"]
 [ext_resource type="Script" path="res://option_button_3.gd" id="2_xql1g"]
 
-[node name="Control" type="Control"]
+[node name="addnew" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -134,5 +134,5 @@ text = "Add new task!!"
 [connection signal="item_selected" from="OptionButton" to="OptionButton" method="_on_item_selected"]
 [connection signal="item_selected" from="ColorRect/OptionButton" to="OptionButton" method="_on_option_button_item_selected"]
 [connection signal="item_selected" from="ColorRect/OptionButton2" to="OptionButton" method="_on_option_button_2_item_selected"]
-[connection signal="item_selected" from="ColorRect/OptionButton3" to="OptionButton" method="_on_option_button_2_item_selected"]
 [connection signal="item_selected" from="ColorRect/OptionButton3" to="OptionButton" method="_on_option_button_3_item_selected"]
+[connection signal="item_selected" from="ColorRect/OptionButton3" to="OptionButton" method="_on_option_button_2_item_selected"]
