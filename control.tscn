@@ -1,0 +1,50 @@
+[gd_scene load_steps=8 format=3 uid="uid://dagifxk11mlnr"]
+
+[ext_resource type="Script" path="res://background_rect.gd" id="1_tygqe"]
+[ext_resource type="Script" path="res://color_theme.gd" id="2_catat"]
+[ext_resource type="Script" path="res://sort_by.gd" id="3_td3d4"]
+[ext_resource type="Script" path="res://filters.gd" id="4_t2kuj"]
+[ext_resource type="Script" path="res://class_filter.gd" id="5_n1qhr"]
+[ext_resource type="Script" path="res://type_filter.gd" id="6_xht86"]
+[ext_resource type="Script" path="res://due_date_filter.gd" id="7_adpv2"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background Rect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 640.0
+script = ExtResource("1_tygqe")
+
+[node name="MenuBar" type="MenuBar" parent="Background Rect"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Color Theme" type="PopupMenu" parent="Background Rect/MenuBar"]
+script = ExtResource("2_catat")
+
+[node name="Sort By" type="PopupMenu" parent="Background Rect/MenuBar"]
+auto_translate_mode = 1
+script = ExtResource("3_td3d4")
+
+[node name="Filters" type="PopupMenu" parent="Background Rect/MenuBar"]
+auto_translate_mode = 1
+script = ExtResource("4_t2kuj")
+
+[node name="ClassFilter" type="PopupMenu" parent="Background Rect/MenuBar/Filters"]
+script = ExtResource("5_n1qhr")
+
+[node name="TypeFilter" type="PopupMenu" parent="Background Rect/MenuBar/Filters"]
+auto_translate_mode = 1
+script = ExtResource("6_xht86")
+
+[node name="DueDateFilter" type="PopupMenu" parent="Background Rect/MenuBar/Filters"]
+auto_translate_mode = 1
+script = ExtResource("7_adpv2")
