@@ -1,0 +1,27 @@
+[gd_resource type="Theme" load_steps=5 format=3 uid="uid://cbeicof7qr2jc"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_yfn4k"]
+load_path = "res://.godot/imported/LightCheckedbox (1).png-5570f38e899c339b5c90c434ed8e9418.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_lukh8"]
+load_path = "res://.godot/imported/LightUncheckedbox (1).png-33b9eb6b5fa4fd4467207f9fc7af23ad.ctex"
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mpie8"]
+bg_color = Color(0.937255, 0.937255, 0.937255, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8mi4f"]
+bg_color = Color(1, 1, 1, 1)
+
+[resource]
+Button/colors/font_pressed_color = Color(1, 1, 1, 1)
+Button/colors/icon_normal_color = Color(1, 1, 1, 1)
+Tree/colors/children_hl_line_color = Color(1, 1, 1, 1)
+Tree/colors/font_color = Color(1, 1, 1, 1)
+Tree/colors/parent_hl_line_color = Color(0, 0, 0, 1)
+Tree/colors/relationship_line_color = Color(0, 0, 0, 1)
+Tree/colors/title_button_color = Color(1, 1, 1, 1)
+Tree/icons/checked = SubResource("CompressedTexture2D_yfn4k")
+Tree/icons/unchecked = SubResource("CompressedTexture2D_lukh8")
+Tree/icons/unchecked_disabled = SubResource("CompressedTexture2D_lukh8")
+Tree/styles/button_pressed = SubResource("StyleBoxFlat_mpie8")
+Tree/styles/title_button_hover = SubResource("StyleBoxFlat_8mi4f")
