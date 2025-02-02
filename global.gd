@@ -10,9 +10,7 @@ func load_savedata() -> void:
 	
 	for task in task_strings:
 		self.tasks.append(Task.get_task_from_string(task.rstrip("\n")))
-	
-	for task in tasks:
-		print(task)
+
 
 func save_tasks() -> void:
 	var file = FileAccess.open(self.savedata_path, FileAccess.WRITE)
@@ -24,6 +22,10 @@ func save_tasks() -> void:
 			
 	file.store_string(content)
 
+
+func add_task(new_task : Task) -> void:
+	tasks.append(new_task)
+	# TODO: Do stuff
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
