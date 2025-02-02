@@ -1,5 +1,6 @@
-[gd_scene load_steps=24 format=3 uid="uid://cj74eegmk1nmc"]
+[gd_scene load_steps=25 format=3 uid="uid://cj74eegmk1nmc"]
 
+[ext_resource type="Script" path="res://newtask.gd" id="1_bcdv5"]
 [ext_resource type="Theme" uid="uid://bndhnrbtjsebb" path="res://texttheme.tres" id="1_umn8a"]
 [ext_resource type="FontFile" uid="uid://dfvkfjugp4cx1" path="res://Martian_Mono/MartianMono-VariableFont_wdth,wght.ttf" id="2_hlhvp"]
 [ext_resource type="Script" path="res://option_button.gd" id="3_1xsw1"]
@@ -72,6 +73,7 @@ offset_bottom = 17.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.950867, 0.950867)
+script = ExtResource("1_bcdv5")
 
 [node name="Background" type="ColorRect" parent="."]
 layout_mode = 1
@@ -163,8 +165,24 @@ theme_override_styles/hover = ExtResource("4_wkyg8")
 theme_override_styles/pressed = ExtResource("4_wkyg8")
 theme_override_styles/normal = SubResource("StyleBoxFlat_umlhq")
 selected = 0
-item_count = 1
+item_count = 9
 popup/item_0/text = "select type"
+popup/item_1/text = "assignment"
+popup/item_1/id = 1
+popup/item_2/text = "discussion"
+popup/item_2/id = 2
+popup/item_3/text = "paper"
+popup/item_3/id = 3
+popup/item_4/text = "project"
+popup/item_4/id = 4
+popup/item_5/text = "quiz"
+popup/item_5/id = 5
+popup/item_6/text = "midterm"
+popup/item_6/id = 6
+popup/item_7/text = "final"
+popup/item_7/id = 7
+popup/item_8/text = "studying"
+popup/item_8/id = 8
 
 [node name="DateInput" type="LineEdit" parent="."]
 layout_mode = 0
@@ -262,3 +280,7 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_qlkhj")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_vqymc")
 theme_override_styles/normal = SubResource("StyleBoxFlat_aefv5")
 text = "Add task"
+
+[connection signal="item_selected" from="SelectType" to="." method="_on_select_type_item_selected"]
+[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="AddTaskButton" to="." method="_on_add_task_button_pressed"]
