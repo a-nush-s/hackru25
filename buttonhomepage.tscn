@@ -18,7 +18,7 @@
 [ext_resource type="Texture2D" uid="uid://4tn4bmyfesll" path="res://icons/Darktimer(soon).png" id="14_u0k1f"]
 [ext_resource type="PackedScene" uid="uid://d4h8kiqbgjg4y" path="res://darkaddclass.tscn" id="16_p8bkl"]
 [ext_resource type="PackedScene" uid="uid://ckig1o68rihq4" path="res://darkselect.tscn" id="17_ca0kg"]
-[ext_resource type="PackedScene" uid="uid://m337lb47ywrs" path="res://spawner.tscn" id="19_ula81"]
+[ext_resource type="PackedScene" path="res://spawner.tscn" id="19_ula81"]
 [ext_resource type="PackedScene" uid="uid://bir1dx11p38ax" path="res://darkiconwindow.tscn" id="20_hl6gs"]
 [ext_resource type="Script" path="res://darkiconwindow.gd" id="21_juppo"]
 
@@ -250,6 +250,71 @@ position = Vector2(1123, 17)
 scale = Vector2(0.05, 0.05)
 texture = ExtResource("12_4f14b")
 
+[node name="Label7" type="Label" parent="ColorRect2/ColorRect"]
+layout_mode = 0
+offset_left = 63.0
+offset_top = 155.0
+offset_right = 447.0
+offset_bottom = 178.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("9_0nbh1")
+text = "Name of task"
+
+[node name="Label8" type="Label" parent="ColorRect2/ColorRect"]
+layout_mode = 0
+offset_left = 474.0
+offset_top = 155.0
+offset_right = 601.0
+offset_bottom = 178.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("9_0nbh1")
+text = "Class name"
+
+[node name="Label9" type="Label" parent="ColorRect2/ColorRect"]
+layout_mode = 0
+offset_left = 647.0
+offset_top = 155.0
+offset_right = 774.0
+offset_bottom = 178.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("9_0nbh1")
+text = "Type "
+
+[node name="Label10" type="Label" parent="ColorRect2/ColorRect"]
+layout_mode = 0
+offset_left = 806.0
+offset_top = 155.0
+offset_right = 933.0
+offset_bottom = 178.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("9_0nbh1")
+text = "Date"
+
+[node name="Label11" type="Label" parent="ColorRect2/ColorRect"]
+layout_mode = 0
+offset_left = 942.0
+offset_top = 155.0
+offset_right = 1069.0
+offset_bottom = 178.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("9_0nbh1")
+text = "Start"
+
+[node name="Label12" type="Label" parent="ColorRect2/ColorRect"]
+layout_mode = 0
+offset_left = 1024.0
+offset_top = 155.0
+offset_right = 1151.0
+offset_bottom = 178.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("9_0nbh1")
+text = "End/Due"
+
+[node name="Darkexclamation(overdue)2" type="Sprite2D" parent="ColorRect2/ColorRect"]
+position = Vector2(1133, 165)
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("12_4f14b")
+
 [node name="Darkmegaphone(today)" type="Sprite2D" parent="ColorRect2/ColorRect"]
 position = Vector2(1126.75, 17.1875)
 scale = Vector2(0.0366319, 0.036632)
@@ -263,7 +328,7 @@ texture = ExtResource("14_u0k1f")
 [node name="Spawner" parent="." instance=ExtResource("19_ula81")]
 layout_mode = 0
 offset_left = 4.0
-offset_top = 58.0
+offset_top = 67.0
 offset_right = 1150.0
 offset_bottom = 578.0
 

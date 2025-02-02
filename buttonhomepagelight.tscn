@@ -16,7 +16,7 @@
 [ext_resource type="Texture2D" uid="uid://b6mabth32b3eg" path="res://Lcheckbox/LightCheckedbox (1).png" id="14_8yxog"]
 [ext_resource type="Texture2D" uid="uid://5st7nbvqh0vo" path="res://Lcheckbox/LightUncheckedbox (1).png" id="15_8h4y5"]
 [ext_resource type="PackedScene" uid="uid://uhs7ss75s8ud" path="res://lightaddclass.tscn" id="16_kjbmg"]
-[ext_resource type="PackedScene" uid="uid://m337lb47ywrs" path="res://spawner.tscn" id="17_0l76s"]
+[ext_resource type="PackedScene" path="res://spawner.tscn" id="17_0l76s"]
 [ext_resource type="PackedScene" uid="uid://cx73s3le5lcom" path="res://lightselect.tscn" id="17_50mx5"]
 [ext_resource type="Script" path="res://lighticonselect.gd" id="19_spuup"]
 [ext_resource type="PackedScene" uid="uid://bxxfq78qgm5ts" path="res://lighticonwindow.tscn" id="20_onl40"]
@@ -65,66 +65,66 @@ offset_bottom = -189.266
 
 [node name="ClassNamePanel" type="Panel" parent="ColorRect2/Background"]
 layout_mode = 0
-offset_left = 573.968
-offset_top = 178.245
-offset_right = 732.968
-offset_bottom = 209.245
+offset_left = 614.526
+offset_top = 154.909
+offset_right = 773.526
+offset_bottom = 185.909
 theme_override_styles/panel = SubResource("StyleBoxFlat_ojoxq")
 
 [node name="TypeNamePanel" type="Panel" parent="ColorRect2/Background"]
 layout_mode = 0
-offset_left = 748.968
-offset_top = 178.245
-offset_right = 907.968
-offset_bottom = 209.245
+offset_left = 789.526
+offset_top = 154.909
+offset_right = 948.526
+offset_bottom = 185.909
 theme_override_styles/panel = SubResource("StyleBoxFlat_ojoxq")
 
 [node name="TaskName" type="Label" parent="ColorRect2/Background"]
 layout_mode = 0
-offset_left = 175.968
-offset_top = 183.245
-offset_right = 559.968
-offset_bottom = 206.245
+offset_left = 216.526
+offset_top = 159.909
+offset_right = 600.526
+offset_bottom = 182.909
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("10_hw8bo")
 text = "name of task (max 32 characters)"
 
 [node name="ClassName" type="Label" parent="ColorRect2/Background"]
 layout_mode = 0
-offset_left = 587.968
-offset_top = 183.245
-offset_right = 714.968
-offset_bottom = 206.245
+offset_left = 628.526
+offset_top = 159.909
+offset_right = 755.526
+offset_bottom = 182.909
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("10_hw8bo")
 text = "class name"
 
 [node name="TypeName" type="Label" parent="ColorRect2/Background"]
 layout_mode = 0
-offset_left = 760.968
-offset_top = 183.245
-offset_right = 887.968
-offset_bottom = 206.245
+offset_left = 801.526
+offset_top = 159.909
+offset_right = 928.526
+offset_bottom = 182.909
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("10_hw8bo")
 text = "type name"
 
 [node name="Date" type="Label" parent="ColorRect2/Background"]
 layout_mode = 0
-offset_left = 919.968
-offset_top = 183.245
-offset_right = 1046.97
-offset_bottom = 206.245
+offset_left = 960.526
+offset_top = 159.909
+offset_right = 1087.53
+offset_bottom = 182.909
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("10_hw8bo")
 text = "00/00/0000"
 
 [node name="StartTime" type="Label" parent="ColorRect2/Background"]
 layout_mode = 0
-offset_left = 1056.97
-offset_top = 183.245
-offset_right = 1183.97
-offset_bottom = 206.245
+offset_left = 1099.56
+offset_top = 164.839
+offset_right = 1226.56
+offset_bottom = 187.839
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("10_hw8bo")
 text = "00:00
@@ -161,15 +161,15 @@ texture = ExtResource("13_c31wp")
 
 [node name="CheckButton" type="CheckButton" parent="ColorRect2/Background"]
 layout_mode = 0
-offset_left = 121.968
-offset_top = 179.245
-offset_right = 165.968
-offset_bottom = 207.245
+offset_left = 162.526
+offset_top = 155.909
+offset_right = 206.526
+offset_bottom = 183.909
 theme_override_icons/checked = ExtResource("14_8yxog")
 theme_override_icons/unchecked = ExtResource("15_8h4y5")
 
 [node name="Lightexclamation(overdue)" type="Sprite2D" parent="ColorRect2"]
-position = Vector2(1117.62, 63.5526)
+position = Vector2(1119.63, 56.6015)
 scale = Vector2(0.0379749, 0.0379749)
 texture = ExtResource("11_3jbj1")
 
@@ -182,76 +182,76 @@ offset_bottom = -189.266
 
 [node name="ClassNamePanel" type="Panel" parent="ColorRect2/Background2"]
 layout_mode = 0
-offset_left = 573.968
-offset_top = 178.245
-offset_right = 732.968
-offset_bottom = 209.245
+offset_left = 614.526
+offset_top = 154.909
+offset_right = 773.526
+offset_bottom = 185.909
 theme_override_styles/panel = SubResource("StyleBoxFlat_ojoxq")
 
 [node name="TypeNamePanel" type="Panel" parent="ColorRect2/Background2"]
 layout_mode = 0
-offset_left = 748.968
-offset_top = 178.245
-offset_right = 907.968
-offset_bottom = 209.245
+offset_left = 789.526
+offset_top = 154.909
+offset_right = 948.526
+offset_bottom = 185.909
 theme_override_styles/panel = SubResource("StyleBoxFlat_ojoxq")
 
 [node name="TaskName" type="Label" parent="ColorRect2/Background2"]
 layout_mode = 0
-offset_left = 175.968
-offset_top = 300.42
-offset_right = 559.968
-offset_bottom = 323.42
+offset_left = 192.02
+offset_top = 293.469
+offset_right = 576.02
+offset_bottom = 316.469
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("10_hw8bo")
 text = "Name of task"
 
 [node name="ClassName" type="Label" parent="ColorRect2/Background2"]
 layout_mode = 0
-offset_left = 587.968
-offset_top = 300.42
-offset_right = 714.968
-offset_bottom = 323.42
+offset_left = 598.0
+offset_top = 291.483
+offset_right = 725.0
+offset_bottom = 314.483
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("10_hw8bo")
 text = "Class name"
 
 [node name="TypeName" type="Label" parent="ColorRect2/Background2"]
 layout_mode = 0
-offset_left = 760.968
-offset_top = 300.42
-offset_right = 887.968
-offset_bottom = 323.42
+offset_left = 774.01
+offset_top = 293.469
+offset_right = 901.01
+offset_bottom = 316.469
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("10_hw8bo")
-text = "Type name"
+text = "Type "
 
 [node name="Date" type="Label" parent="ColorRect2/Background2"]
 layout_mode = 0
-offset_left = 919.968
-offset_top = 300.42
-offset_right = 1046.97
-offset_bottom = 323.42
+offset_left = 940.033
+offset_top = 293.469
+offset_right = 1067.03
+offset_bottom = 316.469
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("10_hw8bo")
 text = "Date"
 
 [node name="StartTime" type="Label" parent="ColorRect2/Background2"]
 layout_mode = 0
-offset_left = 1056.97
-offset_top = 300.42
-offset_right = 1183.97
-offset_bottom = 323.42
+offset_left = 1071.02
+offset_top = 293.469
+offset_right = 1198.02
+offset_bottom = 316.469
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("10_hw8bo")
 text = "Start "
 
 [node name="EndTime" type="Label" parent="ColorRect2/Background2"]
 layout_mode = 0
-offset_left = 1138.0
-offset_top = 300.0
-offset_right = 1226.0
-offset_bottom = 323.0
+offset_left = 1153.05
+offset_top = 293.049
+offset_right = 1241.05
+offset_bottom = 316.049
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("10_hw8bo")
 text = "End/Due
@@ -277,10 +277,10 @@ texture = ExtResource("13_c31wp")
 
 [node name="CheckButton" type="CheckButton" parent="ColorRect2/Background2"]
 layout_mode = 0
-offset_left = 121.968
-offset_top = 179.245
-offset_right = 165.968
-offset_bottom = 207.245
+offset_left = 162.526
+offset_top = 155.909
+offset_right = 206.526
+offset_bottom = 183.909
 theme_override_icons/checked = ExtResource("14_8yxog")
 theme_override_icons/unchecked = ExtResource("15_8h4y5")
 
@@ -373,9 +373,9 @@ script = ExtResource("9_gnn2v")
 
 [node name="Spawner" parent="." instance=ExtResource("17_0l76s")]
 layout_mode = 0
-offset_left = 13.0
-offset_top = 77.0
-offset_right = 1138.0
+offset_left = 1.0
+offset_top = 69.0
+offset_right = 1154.0
 offset_bottom = 584.0
 is_dark = false
 
