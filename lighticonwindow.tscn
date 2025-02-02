@@ -39,11 +39,13 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
 offset_right = 298.0
 offset_bottom = 232.0
 color = Color(0.87451, 0.87451, 0.87451, 0.588235)
 
 [node name="DiamondButton" type="Button" parent="."]
+layout_mode = 0
 offset_left = 120.0
 offset_top = 30.0
 offset_right = 178.0
@@ -58,6 +60,7 @@ icon = ExtResource("3_r0lgi")
 icon_alignment = 1
 
 [node name="HeartButton" type="Button" parent="."]
+layout_mode = 0
 offset_left = 210.0
 offset_top = 30.0
 offset_right = 268.0
@@ -71,6 +74,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_8m5iw")
 icon_alignment = 1
 
 [node name="SmileyButton" type="Button" parent="."]
+layout_mode = 0
 offset_left = 30.0
 offset_top = 120.0
 offset_right = 88.0
@@ -85,6 +89,7 @@ icon = ExtResource("5_5hawl")
 icon_alignment = 1
 
 [node name="SpiralButton" type="Button" parent="."]
+layout_mode = 0
 offset_left = 120.0
 offset_top = 120.0
 offset_right = 178.0
@@ -99,6 +104,7 @@ icon = ExtResource("6_8no1a")
 icon_alignment = 1
 
 [node name="StarButton" type="Button" parent="."]
+layout_mode = 0
 offset_left = 210.0
 offset_top = 120.0
 offset_right = 268.0
@@ -113,6 +119,7 @@ icon = ExtResource("7_jjo5g")
 icon_alignment = 1
 
 [node name="CloudButton" type="Button" parent="."]
+layout_mode = 0
 offset_left = 30.0
 offset_top = 30.0
 offset_right = 88.0
@@ -126,6 +133,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_v1hld")
 icon_alignment = 1
 
 [node name="ToggleBackground" type="CheckButton" parent="."]
+layout_mode = 0
 offset_left = -6.0
 offset_top = 191.0
 offset_right = 38.0
@@ -134,6 +142,7 @@ theme_override_icons/checked = ExtResource("9_qjieo")
 theme_override_icons/unchecked = ExtResource("10_yn5lc")
 
 [node name="ToggleText" type="Label" parent="."]
+layout_mode = 0
 offset_left = 38.0
 offset_top = 195.0
 offset_right = 422.0

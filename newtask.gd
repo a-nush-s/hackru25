@@ -81,3 +81,7 @@ func _on_addtaskbtn_pressed() -> void:
 	self.show()
 func _on_exit_pressed() -> void:
 	self.hide()
+
+
+func _on_addtaskbtn_2_pressed() -> void:
+	self.show() # Replace with function body.

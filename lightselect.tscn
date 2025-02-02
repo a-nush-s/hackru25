@@ -267,9 +267,9 @@ icon_alignment = 1
 
 [node name="AddTaskButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 707.0
+offset_left = 700.69
 offset_top = 573.0
-offset_right = 1015.0
+offset_right = 1008.69
 offset_bottom = 641.0
 theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
