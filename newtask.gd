@@ -76,3 +76,6 @@ func _on_add_task_button_pressed() -> void:
 	new_task.set_task(new_name, new_class, new_type, start_time, end_time, false)
 	
 	self.hide()
+
+func _on_exit_pressed() -> void:
+	self.hide()

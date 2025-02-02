@@ -242,4 +242,5 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_c21q0")
 text = "Add task"
 
 [connection signal="item_selected" from="SelectType" to="." method="_on_select_type_item_selected"]
+[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
 [connection signal="pressed" from="AddTaskButton" to="." method="_on_add_task_button_pressed"]
