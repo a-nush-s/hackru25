@@ -18,7 +18,7 @@
 [ext_resource type="Texture2D" uid="uid://4tn4bmyfesll" path="res://icons/Darktimer(soon).png" id="14_u0k1f"]
 [ext_resource type="PackedScene" uid="uid://d4h8kiqbgjg4y" path="res://darkaddclass.tscn" id="16_p8bkl"]
 [ext_resource type="PackedScene" uid="uid://ckig1o68rihq4" path="res://darkselect.tscn" id="17_ca0kg"]
-[ext_resource type="PackedScene" uid="uid://m337lb47ywrs" path="res://spawner.tscn" id="19_ula81"]
+[ext_resource type="PackedScene" path="res://spawner.tscn" id="19_ula81"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jts4v"]
 bg_color = Color(1, 0.85098, 0.4, 1)
@@ -214,7 +214,6 @@ offset_right = 1150.0
 offset_bottom = 578.0
 
 [node name="darkaddclass" parent="." instance=ExtResource("16_p8bkl")]
-visible = false
 layout_mode = 1
 offset_left = 189.0
 offset_top = 56.0
