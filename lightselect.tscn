@@ -4,7 +4,7 @@
 [ext_resource type="Theme" uid="uid://bndhnrbtjsebb" path="res://texttheme.tres" id="1_umn8a"]
 [ext_resource type="FontFile" uid="uid://dfvkfjugp4cx1" path="res://Martian_Mono/MartianMono-VariableFont_wdth,wght.ttf" id="2_hlhvp"]
 [ext_resource type="Script" path="res://option_button.gd" id="3_1xsw1"]
-[ext_resource type="StyleBox" uid="uid://xn88ldf1v5lt" path="res://darkmodebutton.tres" id="4_wkyg8"]
+[ext_resource type="StyleBox" uid="uid://c713qqorw4yej" path="res://darkmodebutton.tres" id="4_wkyg8"]
 [ext_resource type="Texture2D" uid="uid://cldwbo81eeep3" path="res://xbutton/darkxbutton (1).png" id="5_cspgo"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3sq04"]
