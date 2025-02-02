@@ -46,6 +46,8 @@ func set_images(which: int) -> void:
 		largeDark = Image.load_from_file("res://largedarkicons/Ldarkstar.png")
 		largeLight = Image.load_from_file("res://largelighticons/Llightstar.png")
 	
+	set_theme(self.which)
+	
 func change_icon(which: int) -> void:
 	self.which = which
 	self.set_images(which)

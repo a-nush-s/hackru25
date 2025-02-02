@@ -12,25 +12,31 @@ func _process(delta: float) -> void:
 
 func _on_diamond_button_pressed() -> void:
 	self.hide() # Replace with function body.
+	Global.icon.change_icon(1)
 
 func _on_heart_button_pressed() -> void:
 	self.hide() # Replace with function body.
+	Global.icon.change_icon(2)
 
 
 func _on_smiley_button_pressed() -> void:
 	self.hide() # Replace with function body.
+	Global.icon.change_icon(3)
 
 
 func _on_spiral_button_pressed() -> void:
 	self.hide() # Replace with function body.
+	Global.icon.change_icon(4)
 
 
 func _on_star_button_pressed() -> void:
 	self.hide() # Replace with function body.
+	Global.icon.change_icon(5)
 
 
 func _on_cloud_button_pressed() -> void:
 	self.hide() # Replace with function body.
+	Global.icon.change_icon(0)
 
 
 

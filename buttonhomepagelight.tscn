@@ -17,7 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://5st7nbvqh0vo" path="res://Lcheckbox/LightUncheckedbox (1).png" id="15_8h4y5"]
 [ext_resource type="Texture2D" uid="uid://dd57423awofgo" path="res://lightsmiley.png" id="16_gxh51"]
 [ext_resource type="PackedScene" uid="uid://uhs7ss75s8ud" path="res://lightaddclass.tscn" id="16_kjbmg"]
-[ext_resource type="PackedScene" uid="uid://m337lb47ywrs" path="res://spawner.tscn" id="17_0l76s"]
+[ext_resource type="PackedScene" path="res://spawner.tscn" id="17_0l76s"]
 [ext_resource type="PackedScene" uid="uid://cx73s3le5lcom" path="res://lightselect.tscn" id="17_50mx5"]
 [ext_resource type="Script" path="res://lightsmiley.gd" id="17_bmivp"]
 [ext_resource type="Texture2D" uid="uid://b61e777rvoqwd" path="res://smalllighticons/Slightstar.png" id="18_ckprp"]
@@ -339,10 +339,10 @@ script = ExtResource("2_686sx")
 
 [node name="MenuBar2" type="MenuBar" parent="ColorRect2"]
 layout_mode = 0
-offset_left = 158.0
-offset_top = 20.993
-offset_right = 394.0
-offset_bottom = 57.993
+offset_left = 216.701
+offset_top = 21.8462
+offset_right = 452.701
+offset_bottom = 58.8462
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
@@ -1253,10 +1253,6 @@ script = ExtResource("21_iog0r")
 [connection signal="pressed" from="ColorRect2/addtaskbtn2" to="lightselect" method="_on_addtaskbtn_2_pressed"]
 [connection signal="pressed" from="ColorRect2/addclassbtn2" to="ColorRect2/addclassbtn2" method="_on_pressed"]
 [connection signal="pressed" from="ColorRect2/addclassbtn2" to="lightaddclass" method="_on_addclassbtn_2_pressed"]
-[connection signal="pressed" from="ColorRect2/MenuBar2/Theme/ColorRect2/addtaskbtn2" to="ColorRect2/MenuBar2/Theme/ColorRect2/addtaskbtn2" method="_on_pressed"]
-[connection signal="pressed" from="ColorRect2/MenuBar2/Theme/ColorRect2/addclassbtn2" to="ColorRect2/MenuBar2/Theme/ColorRect2/addclassbtn2" method="_on_pressed"]
-[connection signal="pressed" from="ColorRect2/MenuBar2/Theme/ColorRect2/ColorRect2/addtaskbtn2" to="ColorRect2/MenuBar2/Theme/ColorRect2/ColorRect2/addtaskbtn2" method="_on_pressed"]
-[connection signal="pressed" from="ColorRect2/MenuBar2/Theme/ColorRect2/ColorRect2/addclassbtn2" to="ColorRect2/MenuBar2/Theme/ColorRect2/ColorRect2/addclassbtn2" method="_on_pressed"]
 [connection signal="pressed" from="Light Icon Select" to="lighticonwindow" method="_on_light_icon_select_pressed"]
 [connection signal="pressed" from="lighticonwindow/DiamondButton" to="ColorRect2/Slightdiamond" method="_on_diamond_button_pressed"]
 [connection signal="pressed" from="lighticonwindow/DiamondButton" to="lighticonwindow" method="_on_diamond_button_pressed"]
