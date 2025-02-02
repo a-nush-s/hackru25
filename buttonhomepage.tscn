@@ -1,7 +1,7 @@
-[gd_scene load_steps=17 format=3 uid="uid://ctlq233d3isx5"]
+[gd_scene load_steps=19 format=3 uid="uid://bvibllvhmclpy"]
 
-[ext_resource type="Script" path="res://button.gd" id="1_eghhn"]
 [ext_resource type="Script" path="res://addtaskbtn.gd" id="2_6ypbg"]
+[ext_resource type="Script" path="res://addclassbtn.gd" id="2_xk1mw"]
 [ext_resource type="Script" path="res://color_theme.gd" id="3_g208t"]
 [ext_resource type="FontFile" uid="uid://cw74yot30uann" path="res://Martian_Mono/static/MartianMono_SemiExpanded-Medium.ttf" id="3_rwg1w"]
 [ext_resource type="Script" path="res://sort_by.gd" id="4_kp8xl"]
@@ -15,6 +15,8 @@
 [ext_resource type="Texture2D" uid="uid://tudq1kfy7dw2" path="res://icons/Darkexclamation(overdue).png" id="12_4f14b"]
 [ext_resource type="Texture2D" uid="uid://bo036llcaox2i" path="res://icons/Darkmegaphone(today).png" id="13_3q0q4"]
 [ext_resource type="Texture2D" uid="uid://4tn4bmyfesll" path="res://icons/Darktimer(soon).png" id="14_u0k1f"]
+[ext_resource type="PackedScene" uid="uid://d4h8kiqbgjg4y" path="res://darkaddclass.tscn" id="16_p8bkl"]
+[ext_resource type="PackedScene" uid="uid://ckig1o68rihq4" path="res://darkselect.tscn" id="17_ca0kg"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jts4v"]
 bg_color = Color(1, 0.85098, 0.4, 1)
@@ -23,7 +25,7 @@ corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
-[node name="buttonhomepage" type="Control"]
+[node name="buttonhomepagedark" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -38,16 +40,16 @@ offset_right = 1154.0
 offset_bottom = 645.0
 color = Color(0, 0, 0, 1)
 
-[node name="addclassbtn" type="Button" parent="ColorRect2"]
+[node name="addtaskbtn" type="Button" parent="ColorRect2"]
 layout_mode = 0
 offset_left = 1046.0
 offset_top = 599.0
 offset_right = 1129.0
 offset_bottom = 639.0
 text = "Add Task"
-script = ExtResource("1_eghhn")
+script = ExtResource("2_6ypbg")
 
-[node name="addtaskbtn" type="Button" parent="ColorRect2"]
+[node name="addclassbtn" type="Button" parent="ColorRect2"]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = -0.975
@@ -57,7 +59,7 @@ offset_top = 600.0
 offset_right = 2160.2
 offset_bottom = 638.0
 text = "Add Class"
-script = ExtResource("2_6ypbg")
+script = ExtResource("2_xk1mw")
 
 [node name="MenuBar" type="MenuBar" parent="ColorRect2"]
 layout_mode = 0
@@ -201,5 +203,24 @@ position = Vector2(1123, 18)
 scale = Vector2(0.0451389, 0.0451389)
 texture = ExtResource("14_u0k1f")
 
+[node name="darkaddclass" parent="ColorRect2" instance=ExtResource("16_p8bkl")]
+visible = false
+layout_mode = 1
+offset_left = 189.0
+offset_top = 62.0
+offset_right = -171.0
+offset_bottom = -92.0
+scale = Vector2(0.963653, 0.978965)
+
+[node name="DarkSelect" parent="ColorRect2" instance=ExtResource("17_ca0kg")]
+visible = false
+layout_mode = 1
+offset_left = 126.0
+offset_top = 38.0
+offset_right = 126.0
+offset_bottom = 38.0
+scale = Vector2(0.77663, 0.787678)
+
+[connection signal="pressed" from="ColorRect2/addtaskbtn" to="ColorRect2/addtaskbtn" method="_on_pressed"]
+[connection signal="pressed" from="ColorRect2/addtaskbtn" to="ColorRect2/DarkSelect" method="_on_addtaskbtn_pressed"]
 [connection signal="pressed" from="ColorRect2/addclassbtn" to="ColorRect2/addclassbtn" method="_on_pressed"]
-[connection signal="pressed" from="ColorRect2/addtaskbtn" to="ColorRect2/addclassbtn" method="_on_addtaskbtn_pressed"]
