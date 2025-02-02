@@ -153,6 +153,7 @@ theme_override_colors/font_selected_color = Color(0.834614, 0.834614, 0.834614, 
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("2_50jct")
 theme_override_font_sizes/font_size = 50
+theme_override_styles/focus = ExtResource("4_k1ndn")
 placeholder_text = "Enter date"
 virtual_keyboard_enabled = false
 
@@ -167,6 +168,7 @@ theme_override_colors/font_selected_color = Color(0.834614, 0.834614, 0.834614, 
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("2_50jct")
 theme_override_font_sizes/font_size = 50
+theme_override_styles/focus = ExtResource("4_k1ndn")
 placeholder_text = "Start time"
 virtual_keyboard_enabled = false
 
@@ -181,6 +183,7 @@ theme_override_colors/font_selected_color = Color(0.834614, 0.834614, 0.834614, 
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("2_50jct")
 theme_override_font_sizes/font_size = 50
+theme_override_styles/focus = ExtResource("4_k1ndn")
 placeholder_text = "End time"
 virtual_keyboard_enabled = false
 
