@@ -55,8 +55,8 @@ func add_task(new_task : Task) -> void:
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-self.load_savedata()
-	
+	self.load_savedata()
+	icon.create_icon_obj()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
