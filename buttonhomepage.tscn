@@ -18,7 +18,7 @@
 [ext_resource type="Texture2D" uid="uid://4tn4bmyfesll" path="res://icons/Darktimer(soon).png" id="14_u0k1f"]
 [ext_resource type="PackedScene" uid="uid://d4h8kiqbgjg4y" path="res://darkaddclass.tscn" id="16_p8bkl"]
 [ext_resource type="PackedScene" uid="uid://ckig1o68rihq4" path="res://darkselect.tscn" id="17_ca0kg"]
-[ext_resource type="PackedScene" uid="uid://m337lb47ywrs" path="res://spawner.tscn" id="19_ula81"]
+[ext_resource type="PackedScene" path="res://spawner.tscn" id="19_ula81"]
 [ext_resource type="PackedScene" uid="uid://bir1dx11p38ax" path="res://darkiconwindow.tscn" id="20_hl6gs"]
 [ext_resource type="Script" path="res://darkiconwindow.gd" id="21_juppo"]
 

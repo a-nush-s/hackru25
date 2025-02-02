@@ -9,7 +9,6 @@ var cur_spawner
 
 var icon = Icon.new()
 
-
 func load_savedata() -> void:
 	var file : FileAccess = FileAccess.open(self.savedata_path, FileAccess.READ)
 	var content : String = file.get_as_text()
@@ -52,6 +51,7 @@ func add_task(new_task : Task) -> void:
 	tasks.append(new_task)
 	if cur_spawner:
 		cur_spawner.new_task(new_task)
+	
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
