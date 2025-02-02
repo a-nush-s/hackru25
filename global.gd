@@ -14,14 +14,30 @@ func load_savedata() -> void:
 	var file : FileAccess = FileAccess.open(self.savedata_path, FileAccess.READ)
 	var content : String = file.get_as_text()
 	var task_strings : PackedStringArray = content.split("\n\n")
+	var class_strings : PackedStringArray = task_strings[0].split("\n")
 	
-	for task in task_strings:
-		self.tasks.append(Task.get_task_from_string(task.rstrip("\n")))
+	
+
+	
+	for c in class_strings:
+		if c != "":
+			self.add_class(ClassClass.get_class_from_string(c))
+		
+	
+	for task in task_strings.slice(1):
+		if task != "":
+			self.tasks.append(Task.get_task_from_string(task.rstrip("\n")))
 
 
 func save_tasks() -> void:
+	print("test")
 	var file = FileAccess.open(self.savedata_path, FileAccess.WRITE)
 	var content : String = ""
+	
+	for i in self.classes:
+		content += str(i)
+	content += '\n'
+	
 	for i in range(len(self.tasks)):
 		content += str(self.tasks[i])
 		if i != len(self.tasks) - 1:
@@ -39,9 +55,13 @@ func add_task(new_task : Task) -> void:
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	load_savedata()
-	icon.create_icon_obj()
+self.load_savedata()
+	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
+
+func _notification(what: int) -> void:
+	if what == NOTIFICATION_WM_CLOSE_REQUEST:
+		self.save_tasks()

@@ -1,20 +1,16 @@
+Math	ff0000ff
+Science	10af52ff
+
 Chapter 8
 	Math
-	HW
-	1738454108
-	1738454108
+	discussion
+	1768219920
+	1768219920
 	false
 
-Gobbeldy Gook
-	Vegetables
-	Shopping
-	12
-	552
-	true
-
-Wacky Woo
-	Classes
-	AHHHHHHHHHH
-	1738455931
-	1738455931
+Lab
+	Science
+	paper
+	1738498380
+	1738498380
 	false
