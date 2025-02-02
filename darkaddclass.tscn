@@ -1,6 +1,6 @@
 [gd_scene load_steps=13 format=3 uid="uid://d4h8kiqbgjg4y"]
 
-[ext_resource type="Theme" path="res://texttheme.tres" id="1_jf8kw"]
+[ext_resource type="Theme" uid="uid://bndhnrbtjsebb" path="res://texttheme.tres" id="1_jf8kw"]
 [ext_resource type="FontFile" uid="uid://dfvkfjugp4cx1" path="res://Martian_Mono/MartianMono-VariableFont_wdth,wght.ttf" id="1_lo4s3"]
 [ext_resource type="Script" path="res://darkaddclass.gd" id="1_ynewm"]
 [ext_resource type="Texture2D" uid="uid://cldwbo81eeep3" path="res://xbutton/darkxbutton (1).png" id="2_nyren"]
