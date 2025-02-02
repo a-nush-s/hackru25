@@ -1,12 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://2xidx5rv1u6j"]
+[gd_scene load_steps=8 format=3 uid="uid://2xidx5rv1u6j"]
 
 [ext_resource type="FontFile" uid="uid://dfvkfjugp4cx1" path="res://Martian_Mono/MartianMono-VariableFont_wdth,wght.ttf" id="1_cvwx7"]
 [ext_resource type="Script" path="res://taskvisuals.gd" id="1_pek2s"]
 [ext_resource type="Texture2D" uid="uid://tudq1kfy7dw2" path="res://icons/Darkexclamation(overdue).png" id="2_kctwe"]
 [ext_resource type="Texture2D" uid="uid://bo036llcaox2i" path="res://icons/Darkmegaphone(today).png" id="3_0mqda"]
 [ext_resource type="Texture2D" uid="uid://4tn4bmyfesll" path="res://icons/Darktimer(soon).png" id="4_yagpi"]
-[ext_resource type="Texture2D" uid="uid://bse3s4y3t2lle" path="res://Dcheckbox/DarkCheckedbox (1).png" id="5_tm03d"]
-[ext_resource type="Texture2D" uid="uid://befmxeykybaje" path="res://Dcheckbox/DarkUncheckedbox (1).png" id="6_ep1gf"]
 
 [sub_resource type="Theme" id="Theme_sa6dv"]
 
@@ -32,7 +30,6 @@ theme = SubResource("Theme_sa6dv")
 script = ExtResource("1_pek2s")
 
 [node name="Background" type="ColorRect" parent="."]
-
 layout_mode = 0
 offset_left = 3.0
 offset_top = -11.0
@@ -41,7 +38,6 @@ offset_bottom = 46.0
 color = Color(0, 0, 0, 1)
 
 [node name="ClassNamePanel" type="Panel" parent="."]
-
 layout_mode = 0
 offset_left = 457.0
 offset_top = 2.0
@@ -50,7 +46,6 @@ offset_bottom = 33.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_sgi7y")
 
 [node name="TypeNamePanel" type="Panel" parent="."]
-
 layout_mode = 0
 offset_left = 632.0
 offset_top = 2.0
@@ -59,7 +54,6 @@ offset_bottom = 33.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_sgi7y")
 
 [node name="TaskName" type="Label" parent="."]
-
 layout_mode = 0
 offset_left = 59.0
 offset_top = 7.0
@@ -70,7 +64,6 @@ theme_override_fonts/font = ExtResource("1_cvwx7")
 text = "name of task (max 32 characters)"
 
 [node name="ClassName" type="Label" parent="."]
-
 layout_mode = 0
 offset_left = 471.0
 offset_top = 7.0
@@ -81,7 +74,6 @@ theme_override_fonts/font = ExtResource("1_cvwx7")
 text = "class name"
 
 [node name="TypeName" type="Label" parent="."]
-
 layout_mode = 0
 offset_left = 644.0
 offset_top = 7.0
@@ -92,7 +84,6 @@ theme_override_fonts/font = ExtResource("1_cvwx7")
 text = "type name"
 
 [node name="Date" type="Label" parent="."]
-
 layout_mode = 0
 offset_left = 803.0
 offset_top = 7.0
@@ -103,7 +94,6 @@ theme_override_fonts/font = ExtResource("1_cvwx7")
 text = "00/00/0000"
 
 [node name="StartTime" type="Label" parent="."]
-
 layout_mode = 0
 offset_left = 939.0
 offset_top = 7.0
@@ -115,7 +105,6 @@ text = "00:00
 "
 
 [node name="EndTime" type="Label" parent="."]
-
 layout_mode = 0
 offset_left = 1021.0
 offset_top = 7.0
@@ -128,7 +117,6 @@ text = "00:00
 
 [node name="OverdueImg" type="Sprite2D" parent="."]
 visible = false
-
 position = Vector2(1123, 17)
 scale = Vector2(0.05, 0.05)
 texture = ExtResource("2_kctwe")
