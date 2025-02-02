@@ -1,0 +1,126 @@
+[gd_scene load_steps=13 format=3 uid="uid://rc5aqxuuvj7j"]
+
+[ext_resource type="FontFile" uid="uid://dfvkfjugp4cx1" path="res://Martian_Mono/MartianMono-VariableFont_wdth,wght.ttf" id="1_b4kym"]
+[ext_resource type="Texture2D" uid="uid://cldwbo81eeep3" path="res://xbutton/darkxbutton (1).png" id="2_6yyqg"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vfune"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n5my3"]
+bg_color = Color(1, 1, 1, 0.588235)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pf8ej"]
+bg_color = Color(0, 0, 0, 0.588235)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rlxoq"]
+bg_color = Color(0, 0, 0, 0.588235)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6jmi8"]
+bg_color = Color(0, 0, 0, 0.588235)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gufdb"]
+bg_color = Color(0.521569, 0.521569, 0.521569, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mo206"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fg8rf"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3uk3r"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u63os"]
+bg_color = Color(1, 1, 1, 0.588235)
+
+[node name="lightaddclass" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 742.0
+offset_bottom = 429.0
+color = Color(0.87451, 0.87451, 0.87451, 0.588235)
+
+[node name="NewClassLabel" type="Label" parent="."]
+offset_left = 33.0
+offset_top = 15.0
+offset_right = 446.0
+offset_bottom = 100.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_b4kym")
+theme_override_font_sizes/font_size = 50
+text = "Add new class:"
+
+[node name="ChooseColorLabel" type="Label" parent="."]
+offset_left = 31.0
+offset_top = 193.0
+offset_right = 481.0
+offset_bottom = 316.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_b4kym")
+theme_override_font_sizes/font_size = 50
+text = "Choose class 
+color:"
+horizontal_alignment = 2
+
+[node name="NameInput" type="LineEdit" parent="."]
+offset_left = 33.0
+offset_top = 89.0
+offset_right = 709.0
+offset_bottom = 181.0
+theme_override_colors/font_placeholder_color = Color(0.125911, 0.125911, 0.125911, 1)
+theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_b4kym")
+theme_override_font_sizes/font_size = 55
+theme_override_styles/focus = SubResource("StyleBoxFlat_vfune")
+theme_override_styles/normal = SubResource("StyleBoxFlat_n5my3")
+placeholder_text = "Input class name"
+virtual_keyboard_enabled = false
+
+[node name="Exit" type="Button" parent="."]
+offset_left = 680.0
+offset_top = 8.0
+offset_right = 738.0
+offset_bottom = 66.0
+theme_override_colors/icon_normal_color = Color(0.12549, 0.12549, 0.12549, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_icons/icon = ExtResource("2_6yyqg")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_pf8ej")
+theme_override_styles/hover = SubResource("StyleBoxFlat_rlxoq")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_6jmi8")
+theme_override_styles/normal = SubResource("StyleBoxFlat_gufdb")
+icon_alignment = 1
+
+[node name="AddTaskButton" type="Button" parent="."]
+offset_left = 393.0
+offset_top = 347.0
+offset_right = 731.0
+offset_bottom = 415.0
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0.12549, 0.12549, 0.12549, 1)
+theme_override_fonts/font = ExtResource("1_b4kym")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_mo206")
+theme_override_styles/hover = SubResource("StyleBoxFlat_fg8rf")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_3uk3r")
+theme_override_styles/normal = SubResource("StyleBoxFlat_u63os")
+text = "Add class"
+
+[node name="ColorPickerButton" type="ColorPickerButton" parent="."]
+offset_left = 528.0
+offset_top = 201.0
+offset_right = 674.0
+offset_bottom = 324.0

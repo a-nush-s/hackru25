@@ -85,6 +85,7 @@ offset_bottom = 339.0
 color = Color(0.87451, 0.87451, 0.87451, 0.588235)
 
 [node name="NewTaskLabel" type="Label" parent="."]
+layout_mode = 0
 offset_left = 2.0
 offset_top = -5.0
 offset_right = 490.0
@@ -97,6 +98,7 @@ text = "Add new task:"
 
 [node name="NameInput" type="LineEdit" parent="."]
 custom_minimum_size = Vector2(100, 0)
+layout_mode = 0
 offset_left = -2.0
 offset_top = 63.0
 offset_right = 998.0
@@ -112,6 +114,7 @@ placeholder_text = "Input task name"
 virtual_keyboard_enabled = false
 
 [node name="SelectClass" type="OptionButton" parent="."]
+layout_mode = 0
 offset_top = 172.0
 offset_right = 932.0
 offset_bottom = 265.0
@@ -143,6 +146,7 @@ popup/item_5/id = 5
 script = ExtResource("3_1xsw1")
 
 [node name="SelectType" type="OptionButton" parent="."]
+layout_mode = 0
 offset_left = 1.0
 offset_top = 284.0
 offset_right = 708.0
@@ -163,6 +167,7 @@ item_count = 1
 popup/item_0/text = "select type"
 
 [node name="DateInput" type="LineEdit" parent="."]
+layout_mode = 0
 offset_left = 1.0
 offset_top = 394.0
 offset_right = 401.0
@@ -178,6 +183,7 @@ placeholder_text = "Enter date"
 virtual_keyboard_enabled = false
 
 [node name="StartInput" type="LineEdit" parent="."]
+layout_mode = 0
 offset_left = 1.0
 offset_top = 487.0
 offset_right = 401.0
@@ -193,6 +199,7 @@ placeholder_text = "Start time"
 virtual_keyboard_enabled = false
 
 [node name="EndInput" type="LineEdit" parent="."]
+layout_mode = 0
 offset_left = 476.0
 offset_top = 487.0
 offset_right = 876.0
@@ -208,6 +215,7 @@ placeholder_text = "End time"
 virtual_keyboard_enabled = false
 
 [node name="Hyphen" type="Label" parent="."]
+layout_mode = 0
 offset_left = 419.632
 offset_top = 492.0
 offset_right = 907.632
@@ -220,6 +228,7 @@ text = "-
 "
 
 [node name="Exit" type="Button" parent="."]
+layout_mode = 0
 offset_left = 958.0
 offset_top = -6.0
 offset_right = 1016.0
@@ -236,6 +245,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_3e5g0")
 icon_alignment = 1
 
 [node name="AddTaskButton" type="Button" parent="."]
+layout_mode = 0
 offset_left = 707.0
 offset_top = 573.0
 offset_right = 1015.0
