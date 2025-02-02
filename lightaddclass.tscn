@@ -45,15 +45,15 @@ script = ExtResource("1_htk1x")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 0
-offset_right = 742.0
+offset_right = 741.0
 offset_bottom = 429.0
 color = Color(0.87451, 0.87451, 0.87451, 0.588235)
 
 [node name="NewClassLabel" type="Label" parent="."]
 layout_mode = 0
-offset_left = 33.0
+offset_left = 32.0
 offset_top = 15.0
-offset_right = 446.0
+offset_right = 557.0
 offset_bottom = 100.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("1_b4kym")
@@ -62,9 +62,9 @@ text = "Add new class:"
 
 [node name="ChooseColorLabel" type="Label" parent="."]
 layout_mode = 0
-offset_left = 31.0
+offset_left = 30.0
 offset_top = 193.0
-offset_right = 481.0
+offset_right = 480.0
 offset_bottom = 316.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("1_b4kym")
@@ -75,9 +75,9 @@ horizontal_alignment = 2
 
 [node name="NameInput" type="LineEdit" parent="."]
 layout_mode = 0
-offset_left = 33.0
+offset_left = 32.0
 offset_top = 89.0
-offset_right = 709.0
+offset_right = 708.0
 offset_bottom = 181.0
 theme_override_colors/font_placeholder_color = Color(0.125911, 0.125911, 0.125911, 1)
 theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
@@ -109,9 +109,9 @@ icon_alignment = 1
 
 [node name="AddTaskButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 393.0
+offset_left = 380.0
 offset_top = 347.0
-offset_right = 731.0
+offset_right = 718.0
 offset_bottom = 415.0
 theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)

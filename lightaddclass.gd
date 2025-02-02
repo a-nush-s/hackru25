@@ -13,3 +13,8 @@ func _on_addclassbtn_pressed() -> void:
 	self.show()
 func _on_exit_pressed() -> void:
 	self.hide()
+
+
+func _on_addclassbtn_2_pressed() -> void:
+	self.show()
+ # Replace with function body.
