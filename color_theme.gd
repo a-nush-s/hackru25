@@ -15,12 +15,16 @@ func _index_pressed(index: int):
 	if index == 0:
 		set_item_checked(0, true)
 		set_item_checked(1, false)
+		get_tree().change_scene_to_file("res://buttonhomepage.tscn")
+
 	
 	if index == 1:
 		set_item_checked(1, true)
 		set_item_checked(0, false)
+		get_tree().change_scene_to_file("res://buttonhomepagelight.tscn")
 		
-		
+
+			
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass

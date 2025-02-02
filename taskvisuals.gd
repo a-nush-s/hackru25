@@ -47,4 +47,4 @@ func render_task(to_show : Task) -> void:
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	self.size.y = 60

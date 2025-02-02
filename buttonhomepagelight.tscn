@@ -1,9 +1,10 @@
-[gd_scene load_steps=19 format=3 uid="uid://c20mxu7r3dm1k"]
+[gd_scene load_steps=21 format=3 uid="uid://c20mxu7r3dm1k"]
 
 [ext_resource type="Script" path="res://addtaskbtn.gd" id="1_7te3f"]
 [ext_resource type="Script" path="res://addclassbtn.gd" id="2_686sx"]
 [ext_resource type="FontFile" uid="uid://cw74yot30uann" path="res://Martian_Mono/static/MartianMono_SemiExpanded-Medium.ttf" id="3_j4cx4"]
 [ext_resource type="Script" path="res://color_theme.gd" id="4_7uxmc"]
+[ext_resource type="Script" path="res://menu_bar.gd" id="4_kvx2t"]
 [ext_resource type="Script" path="res://sort_by.gd" id="5_bb076"]
 [ext_resource type="Script" path="res://filters.gd" id="6_2vs67"]
 [ext_resource type="Script" path="res://class_filter.gd" id="7_m4lem"]
@@ -16,6 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://b6mabth32b3eg" path="res://Lcheckbox/LightCheckedbox (1).png" id="14_8yxog"]
 [ext_resource type="Texture2D" uid="uid://5st7nbvqh0vo" path="res://Lcheckbox/LightUncheckedbox (1).png" id="15_8h4y5"]
 [ext_resource type="PackedScene" uid="uid://uhs7ss75s8ud" path="res://lightaddclass.tscn" id="16_kjbmg"]
+[ext_resource type="PackedScene" uid="uid://m337lb47ywrs" path="res://spawner.tscn" id="17_0l76s"]
 [ext_resource type="PackedScene" uid="uid://cx73s3le5lcom" path="res://lightselect.tscn" id="17_50mx5"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ojoxq"]
@@ -68,6 +70,7 @@ offset_top = 11.9301
 offset_right = 271.023
 offset_bottom = 48.9301
 theme_override_fonts/font = ExtResource("3_j4cx4")
+script = ExtResource("4_kvx2t")
 
 [node name="Theme" type="PopupMenu" parent="ColorRect2/MenuBar"]
 auto_translate_mode = 1
@@ -95,10 +98,10 @@ script = ExtResource("9_gnn2v")
 
 [node name="Background" type="ColorRect" parent="ColorRect2"]
 layout_mode = 0
-offset_left = -132.0
-offset_top = -71.0
-offset_right = 1021.0
-offset_bottom = -14.0
+offset_left = -134.435
+offset_top = -246.266
+offset_right = 1018.56
+offset_bottom = -189.266
 
 [node name="ClassNamePanel" type="Panel" parent="ColorRect2/Background"]
 layout_mode = 0
@@ -204,6 +207,14 @@ offset_right = 165.968
 offset_bottom = 207.245
 theme_override_icons/checked = ExtResource("14_8yxog")
 theme_override_icons/unchecked = ExtResource("15_8h4y5")
+
+[node name="Spawner" parent="." instance=ExtResource("17_0l76s")]
+layout_mode = 0
+offset_left = 13.0
+offset_top = 34.0
+offset_right = 1138.0
+offset_bottom = 584.0
+is_dark = false
 
 [node name="lightaddclass" parent="." instance=ExtResource("16_kjbmg")]
 visible = false
