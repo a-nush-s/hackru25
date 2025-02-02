@@ -14,7 +14,6 @@ func _ready():
 
 func _index_pressed(index: int):
 	if index == 0:
-		print("Class was pressed")
 		if (is_item_checked(0)):
 			set_item_checked(0, false)
 		else: 
@@ -23,10 +22,7 @@ func _index_pressed(index: int):
 			set_item_checked(2, false)
 			set_item_checked(3, false)
 
-			
-		
 	if index == 1:
-		print("Type was pressed")
 		if (is_item_checked(1)):
 			set_item_checked(1, false)
 		else: 
@@ -36,7 +32,6 @@ func _index_pressed(index: int):
 			set_item_checked(3, false)
 		
 	if index == 2:
-		print("Due Date was pressed")
 		if (is_item_checked(2)):
 			set_item_checked(2, false)
 		else: 
@@ -46,7 +41,6 @@ func _index_pressed(index: int):
 			set_item_checked(3, false)
 		
 	if index == 3:
-		print("Task A-Z was pressed")
 		if (is_item_checked(3)):
 			set_item_checked(3, false)
 		else: 
