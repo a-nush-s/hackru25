@@ -4,8 +4,8 @@
 [ext_resource type="Theme" uid="uid://bndhnrbtjsebb" path="res://texttheme.tres" id="1_umn8a"]
 [ext_resource type="FontFile" uid="uid://dfvkfjugp4cx1" path="res://Martian_Mono/MartianMono-VariableFont_wdth,wght.ttf" id="2_hlhvp"]
 [ext_resource type="Script" path="res://option_button.gd" id="3_1xsw1"]
-[ext_resource type="StyleBox" uid="uid://c713qqorw4yej" path="res://darkmodebutton.tres" id="4_wkyg8"]
 [ext_resource type="Texture2D" uid="uid://cldwbo81eeep3" path="res://xbutton/darkxbutton (1).png" id="5_cspgo"]
+[ext_resource type="StyleBox" uid="uid://dqx8iundlswd0" path="res://lightmodehover.tres" id="5_naatd"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3sq04"]
 bg_color = Color(1, 1, 1, 1)
@@ -25,11 +25,11 @@ bg_color = Color(1, 1, 1, 1)
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_34jlv"]
 bg_color = Color(1, 1, 1, 0.588235)
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5mogi"]
+bg_color = Color(1, 1, 1, 1)
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_umlhq"]
 bg_color = Color(1, 1, 1, 0.588235)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ql7lb"]
-bg_color = Color(1, 1, 1, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3lajf"]
 bg_color = Color(1, 1, 1, 0.588235)
@@ -163,9 +163,9 @@ theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_color = Color(0.12549, 0.12549, 0.12549, 1)
 theme_override_fonts/font = ExtResource("2_hlhvp")
 theme_override_font_sizes/font_size = 50
-theme_override_styles/hover_pressed = ExtResource("4_wkyg8")
-theme_override_styles/hover = ExtResource("4_wkyg8")
-theme_override_styles/pressed = ExtResource("4_wkyg8")
+theme_override_styles/hover_pressed = ExtResource("5_naatd")
+theme_override_styles/hover = ExtResource("5_naatd")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_5mogi")
 theme_override_styles/normal = SubResource("StyleBoxFlat_umlhq")
 selected = 0
 item_count = 9
@@ -198,7 +198,7 @@ theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_hlhvp")
 theme_override_font_sizes/font_size = 50
-theme_override_styles/focus = SubResource("StyleBoxFlat_ql7lb")
+theme_override_styles/focus = ExtResource("5_naatd")
 theme_override_styles/normal = SubResource("StyleBoxFlat_3lajf")
 placeholder_text = "Enter date"
 virtual_keyboard_enabled = false
@@ -214,7 +214,7 @@ theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_hlhvp")
 theme_override_font_sizes/font_size = 50
-theme_override_styles/focus = ExtResource("4_wkyg8")
+theme_override_styles/focus = ExtResource("5_naatd")
 theme_override_styles/normal = SubResource("StyleBoxFlat_612pv")
 placeholder_text = "Start time"
 virtual_keyboard_enabled = false
@@ -230,16 +230,16 @@ theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_hlhvp")
 theme_override_font_sizes/font_size = 50
-theme_override_styles/focus = ExtResource("4_wkyg8")
+theme_override_styles/focus = ExtResource("5_naatd")
 theme_override_styles/normal = SubResource("StyleBoxFlat_fdbia")
 placeholder_text = "End time"
 virtual_keyboard_enabled = false
 
 [node name="Hyphen" type="Label" parent="."]
 layout_mode = 0
-offset_left = 419.632
+offset_left = 420.0
 offset_top = 492.0
-offset_right = 907.632
+offset_right = 666.0
 offset_bottom = 552.0
 theme = ExtResource("1_umn8a")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
