@@ -60,6 +60,7 @@ text = "Add Class"
 script = ExtResource("2_6ypbg")
 
 [node name="MenuBar" type="MenuBar" parent="ColorRect2"]
+layout_mode = 0
 offset_left = 4.0
 offset_top = 2.0
 offset_right = 239.0
@@ -91,6 +92,7 @@ auto_translate_mode = 1
 script = ExtResource("8_wdu2b")
 
 [node name="ColorRect" type="ColorRect" parent="ColorRect2"]
+layout_mode = 0
 offset_left = 3.0
 offset_top = 101.0
 offset_right = 1150.0
@@ -98,6 +100,7 @@ offset_bottom = 158.0
 color = Color(0, 0, 0, 1)
 
 [node name="Panel" type="Panel" parent="ColorRect2/ColorRect"]
+layout_mode = 0
 offset_left = 457.0
 offset_top = 2.0
 offset_right = 616.0
@@ -105,6 +108,7 @@ offset_bottom = 33.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_jts4v")
 
 [node name="Panel2" type="Panel" parent="ColorRect2/ColorRect"]
+layout_mode = 0
 offset_left = 632.0
 offset_top = 2.0
 offset_right = 791.0
@@ -112,6 +116,7 @@ offset_bottom = 33.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_jts4v")
 
 [node name="Label" type="Label" parent="ColorRect2/ColorRect"]
+layout_mode = 0
 offset_left = 59.0
 offset_top = 7.0
 offset_right = 443.0
@@ -121,6 +126,7 @@ theme_override_fonts/font = ExtResource("9_0nbh1")
 text = "name of task (max 32 characters)"
 
 [node name="Label2" type="Label" parent="ColorRect2/ColorRect"]
+layout_mode = 0
 offset_left = 471.0
 offset_top = 7.0
 offset_right = 598.0
@@ -130,6 +136,7 @@ theme_override_fonts/font = ExtResource("9_0nbh1")
 text = "class name"
 
 [node name="Label3" type="Label" parent="ColorRect2/ColorRect"]
+layout_mode = 0
 offset_left = 644.0
 offset_top = 7.0
 offset_right = 771.0
@@ -139,6 +146,7 @@ theme_override_fonts/font = ExtResource("9_0nbh1")
 text = "type name"
 
 [node name="Label4" type="Label" parent="ColorRect2/ColorRect"]
+layout_mode = 0
 offset_left = 803.0
 offset_top = 7.0
 offset_right = 930.0
@@ -148,6 +156,7 @@ theme_override_fonts/font = ExtResource("9_0nbh1")
 text = "00/00/0000"
 
 [node name="Label5" type="Label" parent="ColorRect2/ColorRect"]
+layout_mode = 0
 offset_left = 939.0
 offset_top = 7.0
 offset_right = 1066.0
@@ -158,6 +167,7 @@ text = "00:00
 "
 
 [node name="Label6" type="Label" parent="ColorRect2/ColorRect"]
+layout_mode = 0
 offset_left = 1021.0
 offset_top = 7.0
 offset_right = 1148.0
@@ -168,6 +178,7 @@ text = "00:00
 "
 
 [node name="CheckButton" type="CheckButton" parent="ColorRect2/ColorRect"]
+layout_mode = 0
 offset_left = 17.0
 offset_top = 3.0
 offset_right = 49.0
