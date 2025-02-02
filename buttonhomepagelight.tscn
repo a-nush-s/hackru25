@@ -65,14 +65,14 @@ script = ExtResource("2_686sx")
 
 [node name="MenuBar" type="MenuBar" parent="ColorRect2"]
 layout_mode = 0
-offset_left = 11.0227
-offset_top = 11.9301
-offset_right = 271.023
-offset_bottom = 48.9301
+offset_left = 4.0
+offset_top = 2.0
+offset_right = 239.0
+offset_bottom = 39.0
 theme_override_fonts/font = ExtResource("3_j4cx4")
 script = ExtResource("4_kvx2t")
 
-[node name="Theme" type="PopupMenu" parent="ColorRect2/MenuBar"]
+[node name="Color Theme" type="PopupMenu" parent="ColorRect2/MenuBar"]
 auto_translate_mode = 1
 script = ExtResource("4_7uxmc")
 
