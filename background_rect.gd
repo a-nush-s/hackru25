@@ -9,3 +9,11 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
+
+
+func _on_color_theme_index_pressed(index):
+	if index == 0:
+		self.color = Color(0,0,0,1)
+	elif index == 1:
+		self.color = Color(1,1,1,1)
+		
