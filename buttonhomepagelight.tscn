@@ -1,9 +1,10 @@
-[gd_scene load_steps=19 format=3 uid="uid://c20mxu7r3dm1k"]
+[gd_scene load_steps=20 format=3 uid="uid://c20mxu7r3dm1k"]
 
 [ext_resource type="Script" path="res://addtaskbtn.gd" id="1_7te3f"]
 [ext_resource type="Script" path="res://addclassbtn.gd" id="2_686sx"]
 [ext_resource type="FontFile" uid="uid://cw74yot30uann" path="res://Martian_Mono/static/MartianMono_SemiExpanded-Medium.ttf" id="3_j4cx4"]
 [ext_resource type="Script" path="res://color_theme.gd" id="4_7uxmc"]
+[ext_resource type="Script" path="res://menu_bar.gd" id="4_kvx2t"]
 [ext_resource type="Script" path="res://sort_by.gd" id="5_bb076"]
 [ext_resource type="Script" path="res://filters.gd" id="6_2vs67"]
 [ext_resource type="Script" path="res://class_filter.gd" id="7_m4lem"]
@@ -68,6 +69,7 @@ offset_top = 2.0
 offset_right = 239.0
 offset_bottom = 39.0
 theme_override_fonts/font = ExtResource("3_j4cx4")
+script = ExtResource("4_kvx2t")
 
 [node name="Color Theme" type="PopupMenu" parent="ColorRect2/MenuBar"]
 auto_translate_mode = 1
