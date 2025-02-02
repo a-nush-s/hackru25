@@ -7,6 +7,9 @@ var classes : Array[ClassClass]
 var cur_scene_root
 var cur_spawner
 
+var icon = Icon.new()
+
+
 func load_savedata() -> void:
 	var file : FileAccess = FileAccess.open(self.savedata_path, FileAccess.READ)
 	var content : String = file.get_as_text()
@@ -52,7 +55,8 @@ func add_task(new_task : Task) -> void:
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	self.load_savedata()
+self.load_savedata()
+	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
