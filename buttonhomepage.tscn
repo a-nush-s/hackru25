@@ -1,5 +1,6 @@
-[gd_scene load_steps=19 format=3 uid="uid://bvibllvhmclpy"]
+[gd_scene load_steps=21 format=3 uid="uid://bvibllvhmclpy"]
 
+[ext_resource type="Script" path="res://buttonhomepage.gd" id="1_n62e2"]
 [ext_resource type="Script" path="res://addtaskbtn.gd" id="2_6ypbg"]
 [ext_resource type="Script" path="res://addclassbtn.gd" id="2_xk1mw"]
 [ext_resource type="Script" path="res://color_theme.gd" id="3_g208t"]
@@ -17,6 +18,7 @@
 [ext_resource type="Texture2D" uid="uid://4tn4bmyfesll" path="res://icons/Darktimer(soon).png" id="14_u0k1f"]
 [ext_resource type="PackedScene" uid="uid://d4h8kiqbgjg4y" path="res://darkaddclass.tscn" id="16_p8bkl"]
 [ext_resource type="PackedScene" uid="uid://ckig1o68rihq4" path="res://darkselect.tscn" id="17_ca0kg"]
+[ext_resource type="PackedScene" uid="uid://m337lb47ywrs" path="res://spawner.tscn" id="19_ula81"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jts4v"]
 bg_color = Color(1, 0.85098, 0.4, 1)
@@ -32,6 +34,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_n62e2")
 
 [node name="ColorRect2" type="ColorRect" parent="."]
 layout_mode = 0
@@ -95,10 +98,10 @@ script = ExtResource("8_wdu2b")
 
 [node name="ColorRect" type="ColorRect" parent="ColorRect2"]
 layout_mode = 0
-offset_left = 3.0
-offset_top = 101.0
-offset_right = 1150.0
-offset_bottom = 158.0
+offset_left = -6.0
+offset_top = -109.0
+offset_right = 1141.0
+offset_bottom = -52.0
 color = Color(0, 0, 0, 1)
 
 [node name="Panel" type="Panel" parent="ColorRect2/ColorRect"]
@@ -203,25 +206,32 @@ position = Vector2(1123, 18)
 scale = Vector2(0.0451389, 0.0451389)
 texture = ExtResource("14_u0k1f")
 
-[node name="darkaddclass" parent="ColorRect2" instance=ExtResource("16_p8bkl")]
+[node name="Spawner" parent="." instance=ExtResource("19_ula81")]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 58.0
+offset_right = 1150.0
+offset_bottom = 578.0
+
+[node name="darkaddclass" parent="." instance=ExtResource("16_p8bkl")]
 visible = false
 layout_mode = 1
 offset_left = 189.0
-offset_top = 62.0
+offset_top = 56.0
 offset_right = -171.0
-offset_bottom = -92.0
+offset_bottom = -98.0
 scale = Vector2(0.963653, 0.978965)
 
-[node name="DarkSelect" parent="ColorRect2" instance=ExtResource("17_ca0kg")]
+[node name="DarkSelect" parent="." instance=ExtResource("17_ca0kg")]
 visible = false
 layout_mode = 1
 offset_left = 203.0
-offset_top = 74.0
+offset_top = 68.0
 offset_right = 77.0
-offset_bottom = 60.0
+offset_bottom = 54.0
 scale = Vector2(0.77663, 0.787678)
 
 [connection signal="pressed" from="ColorRect2/addtaskbtn" to="ColorRect2/addtaskbtn" method="_on_pressed"]
-[connection signal="pressed" from="ColorRect2/addtaskbtn" to="ColorRect2/DarkSelect" method="_on_addtaskbtn_pressed"]
+[connection signal="pressed" from="ColorRect2/addtaskbtn" to="DarkSelect" method="_on_addtaskbtn_pressed"]
 [connection signal="pressed" from="ColorRect2/addclassbtn" to="ColorRect2/addclassbtn" method="_on_pressed"]
-[connection signal="pressed" from="ColorRect2/addclassbtn" to="ColorRect2/darkaddclass" method="_on_addclassbtn_pressed"]
+[connection signal="pressed" from="ColorRect2/addclassbtn" to="darkaddclass" method="_on_addclassbtn_pressed"]
