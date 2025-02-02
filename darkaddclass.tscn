@@ -1,7 +1,8 @@
-[gd_scene load_steps=12 format=3 uid="uid://d4h8kiqbgjg4y"]
+[gd_scene load_steps=13 format=3 uid="uid://d4h8kiqbgjg4y"]
 
 [ext_resource type="Theme" path="res://texttheme.tres" id="1_jf8kw"]
 [ext_resource type="FontFile" uid="uid://dfvkfjugp4cx1" path="res://Martian_Mono/MartianMono-VariableFont_wdth,wght.ttf" id="1_lo4s3"]
+[ext_resource type="Script" path="res://darkaddclass.gd" id="1_ynewm"]
 [ext_resource type="Texture2D" uid="uid://cldwbo81eeep3" path="res://xbutton/darkxbutton (1).png" id="2_nyren"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2ompe"]
@@ -35,6 +36,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_ynewm")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 0
@@ -122,3 +124,5 @@ offset_left = 528.0
 offset_top = 201.0
 offset_right = 674.0
 offset_bottom = 324.0
+
+[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]

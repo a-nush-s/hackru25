@@ -215,12 +215,13 @@ scale = Vector2(0.963653, 0.978965)
 [node name="DarkSelect" parent="ColorRect2" instance=ExtResource("17_ca0kg")]
 visible = false
 layout_mode = 1
-offset_left = 126.0
-offset_top = 38.0
-offset_right = 126.0
-offset_bottom = 38.0
+offset_left = 203.0
+offset_top = 74.0
+offset_right = 77.0
+offset_bottom = 60.0
 scale = Vector2(0.77663, 0.787678)
 
 [connection signal="pressed" from="ColorRect2/addtaskbtn" to="ColorRect2/addtaskbtn" method="_on_pressed"]
 [connection signal="pressed" from="ColorRect2/addtaskbtn" to="ColorRect2/DarkSelect" method="_on_addtaskbtn_pressed"]
 [connection signal="pressed" from="ColorRect2/addclassbtn" to="ColorRect2/addclassbtn" method="_on_pressed"]
+[connection signal="pressed" from="ColorRect2/addclassbtn" to="ColorRect2/darkaddclass" method="_on_addclassbtn_pressed"]
