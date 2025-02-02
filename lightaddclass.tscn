@@ -10,13 +10,13 @@ bg_color = Color(1, 1, 1, 1)
 bg_color = Color(1, 1, 1, 0.588235)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pf8ej"]
-bg_color = Color(0, 0, 0, 0.588235)
+bg_color = Color(1, 1, 1, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rlxoq"]
-bg_color = Color(0, 0, 0, 0.588235)
+bg_color = Color(1, 1, 1, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6jmi8"]
-bg_color = Color(0, 0, 0, 0.588235)
+bg_color = Color(1, 1, 1, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gufdb"]
 bg_color = Color(0.521569, 0.521569, 0.521569, 0)
@@ -48,6 +48,7 @@ offset_bottom = 429.0
 color = Color(0.87451, 0.87451, 0.87451, 0.588235)
 
 [node name="NewClassLabel" type="Label" parent="."]
+layout_mode = 0
 offset_left = 33.0
 offset_top = 15.0
 offset_right = 446.0
@@ -58,6 +59,7 @@ theme_override_font_sizes/font_size = 50
 text = "Add new class:"
 
 [node name="ChooseColorLabel" type="Label" parent="."]
+layout_mode = 0
 offset_left = 31.0
 offset_top = 193.0
 offset_right = 481.0
@@ -70,6 +72,7 @@ color:"
 horizontal_alignment = 2
 
 [node name="NameInput" type="LineEdit" parent="."]
+layout_mode = 0
 offset_left = 33.0
 offset_top = 89.0
 offset_right = 709.0
@@ -85,6 +88,7 @@ placeholder_text = "Input class name"
 virtual_keyboard_enabled = false
 
 [node name="Exit" type="Button" parent="."]
+layout_mode = 0
 offset_left = 680.0
 offset_top = 8.0
 offset_right = 738.0
@@ -102,6 +106,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_gufdb")
 icon_alignment = 1
 
 [node name="AddTaskButton" type="Button" parent="."]
+layout_mode = 0
 offset_left = 393.0
 offset_top = 347.0
 offset_right = 731.0
@@ -120,6 +125,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_u63os")
 text = "Add class"
 
 [node name="ColorPickerButton" type="ColorPickerButton" parent="."]
+layout_mode = 0
 offset_left = 528.0
 offset_top = 201.0
 offset_right = 674.0
