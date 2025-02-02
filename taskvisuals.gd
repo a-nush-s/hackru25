@@ -13,7 +13,7 @@ extends Control
 @onready var today_img : Sprite2D = $TodayImg
 @onready var soon_img : Sprite2D = $SoonImg
 
-
+@onready var class_color : ColorRect = $ClassNameRect
 
 func render_task(to_show : Task) -> void:
 	# All the text nonsense
@@ -33,6 +33,10 @@ func render_task(to_show : Task) -> void:
 		
 	# Make the checkbox remember if its been ticked
 	self.checkbutton.button_pressed = to_show.completed
+	
+	for c in Global.classes:
+		if to_show.task_class == c.classclass_name:
+			self.class_color.color = c.classclass_color
 	
 	var cur_time : int = int(Time.get_unix_time_from_system())
 	var diff_time : int = to_show.start_time - cur_time
