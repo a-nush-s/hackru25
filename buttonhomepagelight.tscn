@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://c20mxu7r3dm1k"]
+[gd_scene load_steps=35 format=3 uid="uid://c20mxu7r3dm1k"]
 
 [ext_resource type="Script" path="res://addtaskbtn.gd" id="1_7te3f"]
 [ext_resource type="Script" path="res://addclassbtn.gd" id="2_686sx"]
@@ -15,12 +15,20 @@
 [ext_resource type="Texture2D" uid="uid://24jan4b4x2w" path="res://icons/Lighttimer(soon).png" id="13_c31wp"]
 [ext_resource type="Texture2D" uid="uid://b6mabth32b3eg" path="res://Lcheckbox/LightCheckedbox (1).png" id="14_8yxog"]
 [ext_resource type="Texture2D" uid="uid://5st7nbvqh0vo" path="res://Lcheckbox/LightUncheckedbox (1).png" id="15_8h4y5"]
+[ext_resource type="Texture2D" uid="uid://dd57423awofgo" path="res://lightsmiley.png" id="16_gxh51"]
 [ext_resource type="PackedScene" uid="uid://uhs7ss75s8ud" path="res://lightaddclass.tscn" id="16_kjbmg"]
 [ext_resource type="PackedScene" path="res://spawner.tscn" id="17_0l76s"]
 [ext_resource type="PackedScene" uid="uid://cx73s3le5lcom" path="res://lightselect.tscn" id="17_50mx5"]
+[ext_resource type="Script" path="res://lightsmiley.gd" id="17_bmivp"]
+[ext_resource type="Texture2D" uid="uid://b61e777rvoqwd" path="res://smalllighticons/Slightstar.png" id="18_ckprp"]
+[ext_resource type="Script" path="res://slightstar.gd" id="19_dufvj"]
 [ext_resource type="Script" path="res://lighticonselect.gd" id="19_spuup"]
+[ext_resource type="Texture2D" uid="uid://fgwweqjnc31k" path="res://smalllighticons/Slightdiamond.png" id="20_4a1w3"]
 [ext_resource type="PackedScene" uid="uid://bxxfq78qgm5ts" path="res://lighticonwindow.tscn" id="20_onl40"]
 [ext_resource type="Script" path="res://lighticonwindow.gd" id="21_iog0r"]
+[ext_resource type="Script" path="res://slightdiamond.gd" id="21_vx2og"]
+[ext_resource type="Texture2D" uid="uid://cjlhiywlxi6nb" path="res://smalllighticons/Slightheart.png" id="22_kirek"]
+[ext_resource type="Script" path="res://slightheart.gd" id="23_ywy4m"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ojoxq"]
 bg_color = Color(1, 0.85098, 0.4, 1)
@@ -974,6 +982,216 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_dxf3j")
 auto_translate_mode = 1
 script = ExtResource("4_7uxmc")
 
+[node name="Sort By" type="PopupMenu" parent="ColorRect2/MenuBar2/Theme/ColorRect2/ColorRect2/MenuBar2"]
+auto_translate_mode = 1
+script = ExtResource("5_bb076")
+
+[node name="Filters" type="PopupMenu" parent="ColorRect2/MenuBar2/Theme/ColorRect2/ColorRect2/MenuBar2"]
+auto_translate_mode = 1
+script = ExtResource("6_2vs67")
+
+[node name="ClassFilter" type="PopupMenu" parent="ColorRect2/MenuBar2/Theme/ColorRect2/ColorRect2/MenuBar2/Filters"]
+auto_translate_mode = 1
+script = ExtResource("7_m4lem")
+
+[node name="TypeFilter" type="PopupMenu" parent="ColorRect2/MenuBar2/Theme/ColorRect2/ColorRect2/MenuBar2/Filters"]
+auto_translate_mode = 1
+script = ExtResource("8_motkx")
+
+[node name="DueDateFilter" type="PopupMenu" parent="ColorRect2/MenuBar2/Theme/ColorRect2/ColorRect2/MenuBar2/Filters"]
+auto_translate_mode = 1
+script = ExtResource("9_gnn2v")
+
+[node name="Sort By" type="PopupMenu" parent="ColorRect2/MenuBar2"]
+auto_translate_mode = 1
+script = ExtResource("5_bb076")
+
+[node name="Filters" type="PopupMenu" parent="ColorRect2/MenuBar2"]
+auto_translate_mode = 1
+script = ExtResource("6_2vs67")
+
+[node name="ClassFilter" type="PopupMenu" parent="ColorRect2/MenuBar2/Filters"]
+auto_translate_mode = 1
+script = ExtResource("7_m4lem")
+
+[node name="TypeFilter" type="PopupMenu" parent="ColorRect2/MenuBar2/Filters"]
+auto_translate_mode = 1
+script = ExtResource("8_motkx")
+
+[node name="DueDateFilter" type="PopupMenu" parent="ColorRect2/MenuBar2/Filters"]
+auto_translate_mode = 1
+script = ExtResource("9_gnn2v")
+
+[node name="Lightsmiley" type="Sprite2D" parent="ColorRect2" groups=["smileys"]]
+visible = false
+position = Vector2(50, 608)
+texture = ExtResource("16_gxh51")
+script = ExtResource("17_bmivp")
+
+[node name="Lightsmiley2" type="Sprite2D" parent="ColorRect2/Lightsmiley" groups=["smileys"]]
+position = Vector2(90, 0)
+texture = ExtResource("16_gxh51")
+
+[node name="Lightsmiley3" type="Sprite2D" parent="ColorRect2/Lightsmiley" groups=["smileys"]]
+position = Vector2(270, 0)
+texture = ExtResource("16_gxh51")
+
+[node name="Lightsmiley4" type="Sprite2D" parent="ColorRect2/Lightsmiley" groups=["smileys"]]
+position = Vector2(180, 0)
+texture = ExtResource("16_gxh51")
+
+[node name="Lightsmiley6" type="Sprite2D" parent="ColorRect2/Lightsmiley" groups=["smileys"]]
+position = Vector2(720, 0)
+texture = ExtResource("16_gxh51")
+
+[node name="Lightsmiley7" type="Sprite2D" parent="ColorRect2/Lightsmiley" groups=["smileys"]]
+position = Vector2(630, 0)
+texture = ExtResource("16_gxh51")
+
+[node name="Lightsmiley8" type="Sprite2D" parent="ColorRect2/Lightsmiley" groups=["smileys"]]
+position = Vector2(540, 0)
+texture = ExtResource("16_gxh51")
+
+[node name="Lightsmiley9" type="Sprite2D" parent="ColorRect2/Lightsmiley" groups=["smileys"]]
+position = Vector2(360, 0)
+texture = ExtResource("16_gxh51")
+
+[node name="Lightsmiley10" type="Sprite2D" parent="ColorRect2/Lightsmiley" groups=["smileys"]]
+position = Vector2(450, 0)
+texture = ExtResource("16_gxh51")
+
+[node name="Lightsmiley11" type="Sprite2D" parent="ColorRect2/Lightsmiley" groups=["smileys"]]
+position = Vector2(810, 0)
+texture = ExtResource("16_gxh51")
+
+[node name="Slightstar" type="Sprite2D" parent="ColorRect2" groups=["star"]]
+visible = false
+position = Vector2(50, 608)
+texture = ExtResource("18_ckprp")
+script = ExtResource("19_dufvj")
+
+[node name="Slightstar2" type="Sprite2D" parent="ColorRect2/Slightstar" groups=["star"]]
+position = Vector2(90, 0)
+texture = ExtResource("18_ckprp")
+
+[node name="Slightstar3" type="Sprite2D" parent="ColorRect2/Slightstar" groups=["star"]]
+position = Vector2(180, 0)
+texture = ExtResource("18_ckprp")
+
+[node name="Slightstar4" type="Sprite2D" parent="ColorRect2/Slightstar" groups=["star"]]
+position = Vector2(270, 0)
+texture = ExtResource("18_ckprp")
+
+[node name="Slightstar5" type="Sprite2D" parent="ColorRect2/Slightstar" groups=["star"]]
+position = Vector2(360, 0)
+texture = ExtResource("18_ckprp")
+
+[node name="Slightstar6" type="Sprite2D" parent="ColorRect2/Slightstar" groups=["star"]]
+position = Vector2(450, 0)
+texture = ExtResource("18_ckprp")
+
+[node name="Slightstar7" type="Sprite2D" parent="ColorRect2/Slightstar" groups=["star"]]
+position = Vector2(540, 0)
+texture = ExtResource("18_ckprp")
+
+[node name="Slightstar8" type="Sprite2D" parent="ColorRect2/Slightstar" groups=["star"]]
+position = Vector2(630, 0)
+texture = ExtResource("18_ckprp")
+
+[node name="Slightstar9" type="Sprite2D" parent="ColorRect2/Slightstar" groups=["star"]]
+position = Vector2(720, 0)
+texture = ExtResource("18_ckprp")
+
+[node name="Slightstar10" type="Sprite2D" parent="ColorRect2/Slightstar" groups=["star"]]
+position = Vector2(810, 0)
+texture = ExtResource("18_ckprp")
+
+[node name="Slightdiamond" type="Sprite2D" parent="ColorRect2" groups=["diamond"]]
+visible = false
+position = Vector2(50, 608)
+scale = Vector2(1.00325, 0.993009)
+texture = ExtResource("20_4a1w3")
+script = ExtResource("21_vx2og")
+
+[node name="Slightdiamond2" type="Sprite2D" parent="ColorRect2/Slightdiamond" groups=["diamond"]]
+position = Vector2(90, 0)
+texture = ExtResource("20_4a1w3")
+
+[node name="Slightdiamond3" type="Sprite2D" parent="ColorRect2/Slightdiamond" groups=["diamond"]]
+position = Vector2(180, 0)
+texture = ExtResource("20_4a1w3")
+
+[node name="Slightdiamond4" type="Sprite2D" parent="ColorRect2/Slightdiamond" groups=["diamond"]]
+position = Vector2(270, 0)
+texture = ExtResource("20_4a1w3")
+
+[node name="Slightdiamond5" type="Sprite2D" parent="ColorRect2/Slightdiamond" groups=["diamond"]]
+position = Vector2(360, 0)
+texture = ExtResource("20_4a1w3")
+
+[node name="Slightdiamond6" type="Sprite2D" parent="ColorRect2/Slightdiamond" groups=["diamond"]]
+position = Vector2(450, 0)
+texture = ExtResource("20_4a1w3")
+
+[node name="Slightdiamond7" type="Sprite2D" parent="ColorRect2/Slightdiamond" groups=["diamond"]]
+position = Vector2(540, 0)
+texture = ExtResource("20_4a1w3")
+
+[node name="Slightdiamond8" type="Sprite2D" parent="ColorRect2/Slightdiamond" groups=["diamond"]]
+position = Vector2(630, 0)
+texture = ExtResource("20_4a1w3")
+
+[node name="Slightdiamond9" type="Sprite2D" parent="ColorRect2/Slightdiamond" groups=["diamond"]]
+position = Vector2(720, 0)
+texture = ExtResource("20_4a1w3")
+
+[node name="Slightdiamond10" type="Sprite2D" parent="ColorRect2/Slightdiamond" groups=["diamond"]]
+position = Vector2(810, 0)
+texture = ExtResource("20_4a1w3")
+
+[node name="Slightheart" type="Sprite2D" parent="ColorRect2" groups=["heart"]]
+visible = false
+position = Vector2(50, 608)
+scale = Vector2(1.00325, 0.993009)
+texture = ExtResource("22_kirek")
+script = ExtResource("23_ywy4m")
+
+[node name="Slightheart2" type="Sprite2D" parent="ColorRect2/Slightheart" groups=["heart"]]
+position = Vector2(90, 0)
+texture = ExtResource("22_kirek")
+
+[node name="Slightheart3" type="Sprite2D" parent="ColorRect2/Slightheart" groups=["heart"]]
+position = Vector2(180, 0)
+texture = ExtResource("22_kirek")
+
+[node name="Slightheart4" type="Sprite2D" parent="ColorRect2/Slightheart" groups=["heart"]]
+position = Vector2(270, 0)
+texture = ExtResource("22_kirek")
+
+[node name="Slightheart5" type="Sprite2D" parent="ColorRect2/Slightheart" groups=["heart"]]
+position = Vector2(360, 0)
+texture = ExtResource("22_kirek")
+
+[node name="Slightheart6" type="Sprite2D" parent="ColorRect2/Slightheart" groups=["heart"]]
+position = Vector2(450, 0)
+texture = ExtResource("22_kirek")
+
+[node name="Slightheart7" type="Sprite2D" parent="ColorRect2/Slightheart" groups=["heart"]]
+position = Vector2(540, 0)
+texture = ExtResource("22_kirek")
+
+[node name="Slightheart8" type="Sprite2D" parent="ColorRect2/Slightheart" groups=["heart"]]
+position = Vector2(630, 0)
+texture = ExtResource("22_kirek")
+
+[node name="Slightheart9" type="Sprite2D" parent="ColorRect2/Slightheart" groups=["heart"]]
+position = Vector2(720, 0)
+texture = ExtResource("22_kirek")
+
+[node name="Slightheart10" type="Sprite2D" parent="ColorRect2/Slightheart" groups=["heart"]]
+position = Vector2(810, 0)
+texture = ExtResource("22_kirek")
+
 [node name="Spawner" parent="." instance=ExtResource("17_0l76s")]
 layout_mode = 0
 offset_left = 13.0
@@ -1036,10 +1254,14 @@ script = ExtResource("21_iog0r")
 [connection signal="pressed" from="ColorRect2/addclassbtn2" to="ColorRect2/addclassbtn2" method="_on_pressed"]
 [connection signal="pressed" from="ColorRect2/addclassbtn2" to="lightaddclass" method="_on_addclassbtn_2_pressed"]
 [connection signal="pressed" from="Light Icon Select" to="lighticonwindow" method="_on_light_icon_select_pressed"]
+[connection signal="pressed" from="lighticonwindow/DiamondButton" to="ColorRect2/Slightdiamond" method="_on_diamond_button_pressed"]
 [connection signal="pressed" from="lighticonwindow/DiamondButton" to="lighticonwindow" method="_on_diamond_button_pressed"]
+[connection signal="pressed" from="lighticonwindow/HeartButton" to="ColorRect2/Slightheart" method="_on_heart_button_pressed"]
 [connection signal="pressed" from="lighticonwindow/HeartButton" to="lighticonwindow" method="_on_heart_button_pressed"]
+[connection signal="pressed" from="lighticonwindow/SmileyButton" to="ColorRect2/Lightsmiley" method="_on_smiley_button_pressed"]
 [connection signal="pressed" from="lighticonwindow/SmileyButton" to="lighticonwindow" method="_on_smiley_button_pressed"]
 [connection signal="pressed" from="lighticonwindow/SpiralButton" to="lighticonwindow" method="_on_spiral_button_pressed"]
+[connection signal="pressed" from="lighticonwindow/StarButton" to="ColorRect2/Slightstar" method="_on_star_button_pressed"]
 [connection signal="pressed" from="lighticonwindow/StarButton" to="lighticonwindow" method="_on_star_button_pressed"]
 [connection signal="pressed" from="lighticonwindow/CloudButton" to="lighticonwindow" method="_on_cloud_button_pressed"]
 
