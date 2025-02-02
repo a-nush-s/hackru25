@@ -57,6 +57,21 @@ func add_task(new_task : Task) -> void:
 func _ready() -> void:
 	self.load_savedata()
 	icon.create_icon_obj()
+	
+
+func _sort_by_date() -> void:
+	for i in range(len(self.tasks)-1):
+		if (self.tasks[i].start_time > self.tasks[i+1].start_time):
+			var temp = self.tasks[i]
+			self.tasks[i] = self.tasks[i+1]
+			self.tasks[i+1] = temp
+			
+func _sort_by_class() -> void:
+	for i in range(len(self.tasks)-1):
+		if (self.tasks[i].task_class > self.tasks[i+1].task_class):
+			var temp = self.tasks[i]
+			self.tasks[i] = self.tasks[i+1]
+			self.tasks[i+1] = temp
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:

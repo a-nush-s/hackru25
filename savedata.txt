@@ -1,1 +1,38 @@
+Physics	f20707ff
+French	f5f207ff
+Calculus	0839fcff
 
+Task D
+	Calculus
+	quiz
+	1756033200
+	1756036800
+	false
+
+Task B
+	French
+	discussion
+	1738713540
+	1738713540
+	false
+
+Task E
+	French
+	assignment
+	1767351600
+	1767351600
+	false
+
+Task C
+	Physics
+	project
+	1750417200
+	1750417200
+	false
+
+Task A
+	Physics
+	assignment
+	1766574000
+	1766574000
+	false

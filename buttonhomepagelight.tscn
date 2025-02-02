@@ -17,7 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://5st7nbvqh0vo" path="res://Lcheckbox/LightUncheckedbox (1).png" id="15_8h4y5"]
 [ext_resource type="Texture2D" uid="uid://dd57423awofgo" path="res://lightsmiley.png" id="16_gxh51"]
 [ext_resource type="PackedScene" uid="uid://uhs7ss75s8ud" path="res://lightaddclass.tscn" id="16_kjbmg"]
-[ext_resource type="PackedScene" path="res://spawner.tscn" id="17_0l76s"]
+[ext_resource type="PackedScene" uid="uid://m337lb47ywrs" path="res://spawner.tscn" id="17_0l76s"]
 [ext_resource type="PackedScene" uid="uid://cx73s3le5lcom" path="res://lightselect.tscn" id="17_50mx5"]
 [ext_resource type="Script" path="res://lightsmiley.gd" id="17_bmivp"]
 [ext_resource type="Texture2D" uid="uid://b61e777rvoqwd" path="res://smalllighticons/Slightstar.png" id="18_ckprp"]
@@ -339,9 +339,9 @@ script = ExtResource("2_686sx")
 
 [node name="MenuBar2" type="MenuBar" parent="ColorRect2"]
 layout_mode = 0
-offset_left = 216.701
+offset_left = 160.52
 offset_top = 21.8462
-offset_right = 452.701
+offset_right = 396.52
 offset_bottom = 58.8462
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
@@ -1002,25 +1002,9 @@ script = ExtResource("8_motkx")
 auto_translate_mode = 1
 script = ExtResource("9_gnn2v")
 
-[node name="Sort By" type="PopupMenu" parent="ColorRect2/MenuBar2"]
+[node name="Sort" type="PopupMenu" parent="ColorRect2/MenuBar2"]
 auto_translate_mode = 1
 script = ExtResource("5_bb076")
-
-[node name="Filters" type="PopupMenu" parent="ColorRect2/MenuBar2"]
-auto_translate_mode = 1
-script = ExtResource("6_2vs67")
-
-[node name="ClassFilter" type="PopupMenu" parent="ColorRect2/MenuBar2/Filters"]
-auto_translate_mode = 1
-script = ExtResource("7_m4lem")
-
-[node name="TypeFilter" type="PopupMenu" parent="ColorRect2/MenuBar2/Filters"]
-auto_translate_mode = 1
-script = ExtResource("8_motkx")
-
-[node name="DueDateFilter" type="PopupMenu" parent="ColorRect2/MenuBar2/Filters"]
-auto_translate_mode = 1
-script = ExtResource("9_gnn2v")
 
 [node name="Lightsmiley" type="Sprite2D" parent="ColorRect2" groups=["smileys"]]
 visible = false
