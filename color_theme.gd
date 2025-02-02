@@ -16,12 +16,14 @@ func _index_pressed(index: int):
 		set_item_checked(0, true)
 		set_item_checked(1, false)
 		get_tree().change_scene_to_file("res://buttonhomepage.tscn")
+		#change theme of icon to dark
 
 	
 	if index == 1:
 		set_item_checked(1, true)
 		set_item_checked(0, false)
 		get_tree().change_scene_to_file("res://buttonhomepagelight.tscn")
+		#change theme of icon to light
 		
 
 			
