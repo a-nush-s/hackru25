@@ -25,6 +25,7 @@ func set_default():
 	self.select_class.clear()
 	self.select_class.add_item("select class")
 	for c in Global.classes:
+		print(c)
 		self.select_class.add_item(c.classclass_name)
 
 # Called when the node enters the scene tree for the first time.
@@ -92,4 +93,5 @@ func _on_exit_pressed() -> void:
 
 
 func _on_addtaskbtn_2_pressed() -> void:
+	self.set_default()
 	self.show() # Replace with function body.
