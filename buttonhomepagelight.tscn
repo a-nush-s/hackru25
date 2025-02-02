@@ -1,10 +1,9 @@
-[gd_scene load_steps=21 format=3 uid="uid://c20mxu7r3dm1k"]
+[gd_scene load_steps=27 format=3 uid="uid://c20mxu7r3dm1k"]
 
 [ext_resource type="Script" path="res://addtaskbtn.gd" id="1_7te3f"]
 [ext_resource type="Script" path="res://addclassbtn.gd" id="2_686sx"]
 [ext_resource type="FontFile" uid="uid://cw74yot30uann" path="res://Martian_Mono/static/MartianMono_SemiExpanded-Medium.ttf" id="3_j4cx4"]
 [ext_resource type="Script" path="res://color_theme.gd" id="4_7uxmc"]
-[ext_resource type="Script" path="res://menu_bar.gd" id="4_kvx2t"]
 [ext_resource type="Script" path="res://sort_by.gd" id="5_bb076"]
 [ext_resource type="Script" path="res://filters.gd" id="6_2vs67"]
 [ext_resource type="Script" path="res://class_filter.gd" id="7_m4lem"]
@@ -17,8 +16,11 @@
 [ext_resource type="Texture2D" uid="uid://b6mabth32b3eg" path="res://Lcheckbox/LightCheckedbox (1).png" id="14_8yxog"]
 [ext_resource type="Texture2D" uid="uid://5st7nbvqh0vo" path="res://Lcheckbox/LightUncheckedbox (1).png" id="15_8h4y5"]
 [ext_resource type="PackedScene" uid="uid://uhs7ss75s8ud" path="res://lightaddclass.tscn" id="16_kjbmg"]
-[ext_resource type="PackedScene" uid="uid://m337lb47ywrs" path="res://spawner.tscn" id="17_0l76s"]
+[ext_resource type="PackedScene" path="res://spawner.tscn" id="17_0l76s"]
 [ext_resource type="PackedScene" uid="uid://cx73s3le5lcom" path="res://lightselect.tscn" id="17_50mx5"]
+[ext_resource type="Script" path="res://lighticonselect.gd" id="19_spuup"]
+[ext_resource type="PackedScene" uid="uid://bxxfq78qgm5ts" path="res://lighticonwindow.tscn" id="20_onl40"]
+[ext_resource type="Script" path="res://lighticonwindow.gd" id="21_iog0r"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ojoxq"]
 bg_color = Color(1, 0.85098, 0.4, 1)
@@ -26,6 +28,18 @@ corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yvbuo"]
+bg_color = Color(0.94902, 0.94902, 0.94902, 0.596078)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pqo1i"]
+bg_color = Color(0.94902, 0.94902, 0.94902, 0.596078)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dxf3j"]
+bg_color = Color(0.94902, 0.94902, 0.94902, 0.596078)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5woe1"]
+bg_color = Color(0.947199, 0.947199, 0.947199, 0.596078)
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -41,60 +55,6 @@ offset_top = -6.0
 offset_right = 1154.0
 offset_bottom = 645.0
 scale = Vector2(0.996763, 1.00704)
-
-[node name="addtaskbtn" type="Button" parent="ColorRect2"]
-layout_mode = 0
-offset_left = 1046.0
-offset_top = 599.0
-offset_right = 1129.0
-offset_bottom = 639.0
-text = "Add Task"
-script = ExtResource("1_7te3f")
-
-[node name="addclassbtn" type="Button" parent="ColorRect2"]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = -0.975
-anchor_right = -0.975
-offset_left = 2070.2
-offset_top = 600.0
-offset_right = 2160.2
-offset_bottom = 638.0
-text = "Add Class"
-script = ExtResource("2_686sx")
-
-[node name="MenuBar" type="MenuBar" parent="ColorRect2"]
-layout_mode = 0
-offset_left = 4.0
-offset_top = 2.0
-offset_right = 239.0
-offset_bottom = 39.0
-theme_override_fonts/font = ExtResource("3_j4cx4")
-script = ExtResource("4_kvx2t")
-
-[node name="Color Theme" type="PopupMenu" parent="ColorRect2/MenuBar"]
-auto_translate_mode = 1
-script = ExtResource("4_7uxmc")
-
-[node name="Sort By" type="PopupMenu" parent="ColorRect2/MenuBar"]
-auto_translate_mode = 1
-script = ExtResource("5_bb076")
-
-[node name="Filters" type="PopupMenu" parent="ColorRect2/MenuBar"]
-auto_translate_mode = 1
-script = ExtResource("6_2vs67")
-
-[node name="ClassFilter" type="PopupMenu" parent="ColorRect2/MenuBar/Filters"]
-auto_translate_mode = 1
-script = ExtResource("7_m4lem")
-
-[node name="TypeFilter" type="PopupMenu" parent="ColorRect2/MenuBar/Filters"]
-auto_translate_mode = 1
-script = ExtResource("8_motkx")
-
-[node name="DueDateFilter" type="PopupMenu" parent="ColorRect2/MenuBar/Filters"]
-auto_translate_mode = 1
-script = ExtResource("9_gnn2v")
 
 [node name="Background" type="ColorRect" parent="ColorRect2"]
 layout_mode = 0
@@ -208,6 +168,100 @@ offset_bottom = 207.245
 theme_override_icons/checked = ExtResource("14_8yxog")
 theme_override_icons/unchecked = ExtResource("15_8h4y5")
 
+[node name="addtaskbtn2" type="Button" parent="ColorRect2"]
+layout_mode = 0
+offset_left = 1046.0
+offset_top = 600.0
+offset_right = 1142.0
+offset_bottom = 640.0
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("10_hw8bo")
+theme_override_styles/focus = SubResource("StyleBoxFlat_yvbuo")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_yvbuo")
+theme_override_styles/hover = SubResource("StyleBoxFlat_yvbuo")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_yvbuo")
+theme_override_styles/normal = SubResource("StyleBoxFlat_yvbuo")
+text = "Add Task"
+script = ExtResource("1_7te3f")
+
+[node name="addclassbtn2" type="Button" parent="ColorRect2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.975
+anchor_right = -0.975
+offset_left = 2050.15
+offset_top = 600.0
+offset_right = 2158.15
+offset_bottom = 638.0
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("10_hw8bo")
+theme_override_styles/focus = SubResource("StyleBoxFlat_pqo1i")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_pqo1i")
+theme_override_styles/hover = SubResource("StyleBoxFlat_pqo1i")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_pqo1i")
+theme_override_styles/normal = SubResource("StyleBoxFlat_pqo1i")
+text = "Add Class"
+script = ExtResource("2_686sx")
+
+[node name="MenuBar2" type="MenuBar" parent="ColorRect2"]
+layout_mode = 0
+offset_left = 158.0
+offset_top = 20.993
+offset_right = 394.0
+offset_bottom = 57.993
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_j4cx4")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_dxf3j")
+theme_override_styles/hover = SubResource("StyleBoxFlat_dxf3j")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_dxf3j")
+theme_override_styles/normal = SubResource("StyleBoxFlat_dxf3j")
+
+[node name="Theme" type="PopupMenu" parent="ColorRect2/MenuBar2"]
+auto_translate_mode = 1
+script = ExtResource("4_7uxmc")
+
+[node name="Sort By" type="PopupMenu" parent="ColorRect2/MenuBar2"]
+auto_translate_mode = 1
+script = ExtResource("5_bb076")
+
+[node name="Filters" type="PopupMenu" parent="ColorRect2/MenuBar2"]
+auto_translate_mode = 1
+script = ExtResource("6_2vs67")
+
+[node name="ClassFilter" type="PopupMenu" parent="ColorRect2/MenuBar2/Filters"]
+auto_translate_mode = 1
+script = ExtResource("7_m4lem")
+
+[node name="TypeFilter" type="PopupMenu" parent="ColorRect2/MenuBar2/Filters"]
+auto_translate_mode = 1
+script = ExtResource("8_motkx")
+
+[node name="DueDateFilter" type="PopupMenu" parent="ColorRect2/MenuBar2/Filters"]
+auto_translate_mode = 1
+script = ExtResource("9_gnn2v")
+
+[node name="Spawner" parent="ColorRect2" instance=ExtResource("17_0l76s")]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 58.0
+offset_right = 1150.0
+offset_bottom = 578.0
+
 [node name="Spawner" parent="." instance=ExtResource("17_0l76s")]
 layout_mode = 0
 offset_left = 13.0
@@ -233,7 +287,48 @@ offset_right = 83.0
 offset_bottom = 91.0
 scale = Vector2(0.719384, 0.718681)
 
-[connection signal="pressed" from="ColorRect2/addtaskbtn" to="ColorRect2/addtaskbtn" method="_on_pressed"]
-[connection signal="pressed" from="ColorRect2/addtaskbtn" to="lightselect" method="_on_addtaskbtn_pressed"]
-[connection signal="pressed" from="ColorRect2/addclassbtn" to="ColorRect2/addclassbtn" method="_on_pressed"]
-[connection signal="pressed" from="ColorRect2/addclassbtn" to="lightaddclass" method="_on_addclassbtn_pressed"]
+[node name="Light Icon Select" type="Button" parent="."]
+layout_mode = 0
+offset_left = 19.9353
+offset_top = 15.0986
+offset_right = 151.935
+offset_bottom = 35.0986
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("10_hw8bo")
+theme_override_styles/focus = SubResource("StyleBoxFlat_5woe1")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_5woe1")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5woe1")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_5woe1")
+theme_override_styles/normal = SubResource("StyleBoxFlat_5woe1")
+toggle_mode = true
+text = "Icon Select"
+script = ExtResource("19_spuup")
+
+[node name="lighticonwindow" parent="." instance=ExtResource("20_onl40")]
+visible = false
+layout_mode = 1
+offset_left = 19.0
+offset_top = 40.0
+offset_right = 19.0
+offset_bottom = 40.0
+script = ExtResource("21_iog0r")
+
+[connection signal="pressed" from="ColorRect2/addtaskbtn2" to="ColorRect2/addtaskbtn2" method="_on_pressed"]
+[connection signal="pressed" from="ColorRect2/addtaskbtn2" to="lightselect" method="_on_addtaskbtn_2_pressed"]
+[connection signal="pressed" from="ColorRect2/addclassbtn2" to="ColorRect2/addclassbtn2" method="_on_pressed"]
+[connection signal="pressed" from="ColorRect2/addclassbtn2" to="lightaddclass" method="_on_addclassbtn_2_pressed"]
+[connection signal="pressed" from="Light Icon Select" to="lighticonwindow" method="_on_light_icon_select_pressed"]
+[connection signal="pressed" from="lighticonwindow/DiamondButton" to="lighticonwindow" method="_on_diamond_button_pressed"]
+[connection signal="pressed" from="lighticonwindow/HeartButton" to="lighticonwindow" method="_on_heart_button_pressed"]
+[connection signal="pressed" from="lighticonwindow/SmileyButton" to="lighticonwindow" method="_on_smiley_button_pressed"]
+[connection signal="pressed" from="lighticonwindow/SpiralButton" to="lighticonwindow" method="_on_spiral_button_pressed"]
+[connection signal="pressed" from="lighticonwindow/StarButton" to="lighticonwindow" method="_on_star_button_pressed"]
+[connection signal="pressed" from="lighticonwindow/CloudButton" to="lighticonwindow" method="_on_cloud_button_pressed"]
+
+[editable path="lighticonwindow"]

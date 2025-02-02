@@ -8,7 +8,7 @@ func _on_addclassbtn_pressed() -> void:
 	
 func _on_exit_pressed() -> void:
 	self.hide()
-
+  
 func _on_add_task_button_pressed() -> void:
 	self.hide()
 	var new_class : ClassClass = ClassClass.new()
