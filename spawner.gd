@@ -12,6 +12,8 @@ var viewer_distance = 60
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	Global.cur_spawner = self
+	for task in Global.tasks:
+		self.new_task(task)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
