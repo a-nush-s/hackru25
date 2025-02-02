@@ -1,13 +1,16 @@
-[gd_scene load_steps=18 format=3 uid="uid://ckig1o68rihq4"]
+[gd_scene load_steps=20 format=3 uid="uid://ckig1o68rihq4"]
 
-[ext_resource type="Theme" path="res://texttheme.tres" id="1_arv5f"]
+[ext_resource type="Theme" uid="uid://bndhnrbtjsebb" path="res://texttheme.tres" id="1_arv5f"]
 [ext_resource type="Script" path="res://newtask.gd" id="1_m8f21"]
 [ext_resource type="FontFile" uid="uid://dfvkfjugp4cx1" path="res://Martian_Mono/MartianMono-VariableFont_wdth,wght.ttf" id="2_of3bm"]
 [ext_resource type="Script" path="res://option_button.gd" id="3_oa8es"]
-[ext_resource type="StyleBox" path="res://darkmodebutton.tres" id="4_f67r6"]
+[ext_resource type="StyleBox" uid="uid://xn88ldf1v5lt" path="res://darkmodebutton.tres" id="4_f67r6"]
 [ext_resource type="Texture2D" uid="uid://cldwbo81eeep3" path="res://xbutton/darkxbutton (1).png" id="5_61xck"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g3ykt"]
+bg_color = Color(0, 0, 0, 0.588235)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j0iad"]
 bg_color = Color(0, 0, 0, 0.588235)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ukbue"]
@@ -17,6 +20,9 @@ bg_color = Color(0, 0, 0, 0.588235)
 bg_color = Color(0, 0, 0, 0.588235)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v4av5"]
+bg_color = Color(0, 0, 0, 0.588235)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kk3re"]
 bg_color = Color(0, 0, 0, 0.588235)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v3617"]
@@ -100,6 +106,7 @@ offset_bottom = 265.0
 theme = ExtResource("1_arv5f")
 theme_override_fonts/font = ExtResource("2_of3bm")
 theme_override_font_sizes/font_size = 50
+theme_override_styles/focus = SubResource("StyleBoxFlat_j0iad")
 theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_ukbue")
 theme_override_styles/hover = SubResource("StyleBoxFlat_1n6o6")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_v4av5")
@@ -126,6 +133,7 @@ offset_right = 708.0
 offset_bottom = 377.0
 theme_override_fonts/font = ExtResource("2_of3bm")
 theme_override_font_sizes/font_size = 50
+theme_override_styles/focus = SubResource("StyleBoxFlat_kk3re")
 theme_override_styles/hover_pressed = ExtResource("4_f67r6")
 theme_override_styles/hover = ExtResource("4_f67r6")
 theme_override_styles/pressed = ExtResource("4_f67r6")
