@@ -1,0 +1,227 @@
+[gd_scene load_steps=19 format=3 uid="uid://c20mxu7r3dm1k"]
+
+[ext_resource type="Script" path="res://addtaskbtn.gd" id="1_7te3f"]
+[ext_resource type="Script" path="res://addclassbtn.gd" id="2_686sx"]
+[ext_resource type="FontFile" uid="uid://cw74yot30uann" path="res://Martian_Mono/static/MartianMono_SemiExpanded-Medium.ttf" id="3_j4cx4"]
+[ext_resource type="Script" path="res://color_theme.gd" id="4_7uxmc"]
+[ext_resource type="Script" path="res://sort_by.gd" id="5_bb076"]
+[ext_resource type="Script" path="res://filters.gd" id="6_2vs67"]
+[ext_resource type="Script" path="res://class_filter.gd" id="7_m4lem"]
+[ext_resource type="Script" path="res://type_filter.gd" id="8_motkx"]
+[ext_resource type="Script" path="res://due_date_filter.gd" id="9_gnn2v"]
+[ext_resource type="FontFile" uid="uid://dfvkfjugp4cx1" path="res://Martian_Mono/MartianMono-VariableFont_wdth,wght.ttf" id="10_hw8bo"]
+[ext_resource type="Texture2D" uid="uid://bgyl4wsbahf2a" path="res://icons/Lightexclamation(overdue).png" id="11_3jbj1"]
+[ext_resource type="Texture2D" uid="uid://cnotjgdhiv233" path="res://icons/Lightmegaphone(today).png" id="12_arbfg"]
+[ext_resource type="Texture2D" uid="uid://24jan4b4x2w" path="res://icons/Lighttimer(soon).png" id="13_c31wp"]
+[ext_resource type="Texture2D" uid="uid://b6mabth32b3eg" path="res://Lcheckbox/LightCheckedbox (1).png" id="14_8yxog"]
+[ext_resource type="Texture2D" uid="uid://5st7nbvqh0vo" path="res://Lcheckbox/LightUncheckedbox (1).png" id="15_8h4y5"]
+[ext_resource type="PackedScene" uid="uid://uhs7ss75s8ud" path="res://lightaddclass.tscn" id="16_kjbmg"]
+[ext_resource type="PackedScene" uid="uid://cx73s3le5lcom" path="res://lightselect.tscn" id="17_50mx5"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ojoxq"]
+bg_color = Color(1, 0.85098, 0.4, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+layout_mode = 0
+offset_top = -6.0
+offset_right = 1154.0
+offset_bottom = 645.0
+scale = Vector2(0.996763, 1.00704)
+
+[node name="addtaskbtn" type="Button" parent="ColorRect2"]
+layout_mode = 0
+offset_left = 1046.0
+offset_top = 599.0
+offset_right = 1129.0
+offset_bottom = 639.0
+text = "Add Task"
+script = ExtResource("1_7te3f")
+
+[node name="addclassbtn" type="Button" parent="ColorRect2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.975
+anchor_right = -0.975
+offset_left = 2070.2
+offset_top = 600.0
+offset_right = 2160.2
+offset_bottom = 638.0
+text = "Add Class"
+script = ExtResource("2_686sx")
+
+[node name="MenuBar" type="MenuBar" parent="ColorRect2"]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 2.0
+offset_right = 239.0
+offset_bottom = 39.0
+theme_override_fonts/font = ExtResource("3_j4cx4")
+
+[node name="Color Theme" type="PopupMenu" parent="ColorRect2/MenuBar"]
+auto_translate_mode = 1
+script = ExtResource("4_7uxmc")
+
+[node name="Sort By" type="PopupMenu" parent="ColorRect2/MenuBar"]
+auto_translate_mode = 1
+script = ExtResource("5_bb076")
+
+[node name="Filters" type="PopupMenu" parent="ColorRect2/MenuBar"]
+auto_translate_mode = 1
+script = ExtResource("6_2vs67")
+
+[node name="ClassFilter" type="PopupMenu" parent="ColorRect2/MenuBar/Filters"]
+auto_translate_mode = 1
+script = ExtResource("7_m4lem")
+
+[node name="TypeFilter" type="PopupMenu" parent="ColorRect2/MenuBar/Filters"]
+auto_translate_mode = 1
+script = ExtResource("8_motkx")
+
+[node name="DueDateFilter" type="PopupMenu" parent="ColorRect2/MenuBar/Filters"]
+auto_translate_mode = 1
+script = ExtResource("9_gnn2v")
+
+[node name="Background" type="ColorRect" parent="ColorRect2"]
+layout_mode = 0
+offset_left = -132.0
+offset_top = -71.0
+offset_right = 1021.0
+offset_bottom = -14.0
+
+[node name="ClassNamePanel" type="Panel" parent="ColorRect2/Background"]
+layout_mode = 0
+offset_left = 573.968
+offset_top = 178.245
+offset_right = 732.968
+offset_bottom = 209.245
+theme_override_styles/panel = SubResource("StyleBoxFlat_ojoxq")
+
+[node name="TypeNamePanel" type="Panel" parent="ColorRect2/Background"]
+layout_mode = 0
+offset_left = 748.968
+offset_top = 178.245
+offset_right = 907.968
+offset_bottom = 209.245
+theme_override_styles/panel = SubResource("StyleBoxFlat_ojoxq")
+
+[node name="TaskName" type="Label" parent="ColorRect2/Background"]
+layout_mode = 0
+offset_left = 175.968
+offset_top = 183.245
+offset_right = 559.968
+offset_bottom = 206.245
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("10_hw8bo")
+text = "name of task (max 32 characters)"
+
+[node name="ClassName" type="Label" parent="ColorRect2/Background"]
+layout_mode = 0
+offset_left = 587.968
+offset_top = 183.245
+offset_right = 714.968
+offset_bottom = 206.245
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("10_hw8bo")
+text = "class name"
+
+[node name="TypeName" type="Label" parent="ColorRect2/Background"]
+layout_mode = 0
+offset_left = 760.968
+offset_top = 183.245
+offset_right = 887.968
+offset_bottom = 206.245
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("10_hw8bo")
+text = "type name"
+
+[node name="Date" type="Label" parent="ColorRect2/Background"]
+layout_mode = 0
+offset_left = 919.968
+offset_top = 183.245
+offset_right = 1046.97
+offset_bottom = 206.245
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("10_hw8bo")
+text = "00/00/0000"
+
+[node name="StartTime" type="Label" parent="ColorRect2/Background"]
+layout_mode = 0
+offset_left = 1056.97
+offset_top = 183.245
+offset_right = 1183.97
+offset_bottom = 206.245
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("10_hw8bo")
+text = "00:00
+"
+
+[node name="EndTime" type="Label" parent="ColorRect2/Background"]
+layout_mode = 0
+offset_left = 1137.97
+offset_top = 183.245
+offset_right = 1264.97
+offset_bottom = 206.245
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("10_hw8bo")
+text = "00:00
+"
+
+[node name="OverdueImg" type="Sprite2D" parent="ColorRect2/Background"]
+visible = false
+position = Vector2(1119.04, 27.4687)
+scale = Vector2(0.0457465, 0.0457465)
+texture = ExtResource("11_3jbj1")
+
+[node name="TodayImg" type="Sprite2D" parent="ColorRect2/Background"]
+visible = false
+position = Vector2(1124, 28)
+scale = Vector2(0.0371528, 0.0371528)
+texture = ExtResource("12_arbfg")
+
+[node name="SoonImg" type="Sprite2D" parent="ColorRect2/Background"]
+visible = false
+position = Vector2(1120, 28)
+scale = Vector2(0.0451389, 0.0451389)
+texture = ExtResource("13_c31wp")
+
+[node name="CheckButton" type="CheckButton" parent="ColorRect2/Background"]
+layout_mode = 0
+offset_left = 121.968
+offset_top = 179.245
+offset_right = 165.968
+offset_bottom = 207.245
+theme_override_icons/checked = ExtResource("14_8yxog")
+theme_override_icons/unchecked = ExtResource("15_8h4y5")
+
+[node name="lightaddclass" parent="." instance=ExtResource("16_kjbmg")]
+visible = false
+layout_mode = 1
+offset_left = 208.0
+offset_top = 76.0
+offset_right = 208.0
+offset_bottom = 76.0
+
+[node name="lightselect" parent="." instance=ExtResource("17_50mx5")]
+visible = false
+layout_mode = 1
+offset_left = 192.0
+offset_top = 70.0
+offset_right = 192.0
+offset_bottom = 70.0
+scale = Vector2(0.719384, 0.718681)
+
+[connection signal="pressed" from="ColorRect2/addtaskbtn" to="ColorRect2/addtaskbtn" method="_on_pressed"]
+[connection signal="pressed" from="ColorRect2/addtaskbtn" to="lightselect" method="_on_addtaskbtn_pressed"]
+[connection signal="pressed" from="ColorRect2/addclassbtn" to="ColorRect2/addclassbtn" method="_on_pressed"]
