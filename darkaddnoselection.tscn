@@ -90,18 +90,8 @@ theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_kcy0y")
 theme_override_styles/hover = SubResource("StyleBoxFlat_2rvnf")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_qv6go")
 selected = 0
-item_count = 6
+item_count = 1
 popup/item_0/text = "select class"
-popup/item_1/text = "psych theories in film"
-popup/item_1/id = 1
-popup/item_2/text = "infant child development"
-popup/item_2/id = 2
-popup/item_3/text = "computer architecture"
-popup/item_3/id = 3
-popup/item_4/text = "gen physics"
-popup/item_4/id = 4
-popup/item_5/text = "sensation and perception"
-popup/item_5/id = 5
 script = ExtResource("3_5y4ie")
 
 [node name="OptionButton3" type="OptionButton" parent="."]
@@ -115,18 +105,8 @@ theme_override_styles/hover_pressed = ExtResource("4_7oohh")
 theme_override_styles/hover = ExtResource("4_7oohh")
 theme_override_styles/pressed = ExtResource("4_7oohh")
 selected = 0
-item_count = 6
+item_count = 1
 popup/item_0/text = "select type"
-popup/item_1/text = "written assignment"
-popup/item_1/id = 1
-popup/item_2/text = "exam"
-popup/item_2/id = 2
-popup/item_3/text = "quiz"
-popup/item_3/id = 3
-popup/item_4/text = "project"
-popup/item_4/id = 4
-popup/item_5/text = "discussion"
-popup/item_5/id = 5
 
 [node name="Button" type="Button" parent="."]
 offset_left = 958.0
