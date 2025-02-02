@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://dagifxk11mlnr"]
+[gd_scene load_steps=9 format=3 uid="uid://dagifxk11mlnr"]
 
 [ext_resource type="Script" path="res://background_rect.gd" id="1_tygqe"]
 [ext_resource type="Script" path="res://color_theme.gd" id="2_catat"]
+[ext_resource type="FontFile" uid="uid://dfvkfjugp4cx1" path="res://Martian_Mono/MartianMono-VariableFont_wdth,wght.ttf" id="2_faoi3"]
 [ext_resource type="Script" path="res://sort_by.gd" id="3_td3d4"]
 [ext_resource type="Script" path="res://filters.gd" id="4_t2kuj"]
 [ext_resource type="Script" path="res://class_filter.gd" id="5_n1qhr"]
@@ -26,27 +27,34 @@ script = ExtResource("1_tygqe")
 layout_mode = 0
 offset_right = 368.0
 offset_bottom = 40.0
+theme_override_fonts/font = ExtResource("2_faoi3")
 
 [node name="Color Theme" type="PopupMenu" parent="Background Rect/MenuBar"]
+theme_override_fonts/font = ExtResource("2_faoi3")
 script = ExtResource("2_catat")
 
 [node name="Sort By" type="PopupMenu" parent="Background Rect/MenuBar"]
 auto_translate_mode = 1
+theme_override_fonts/font = ExtResource("2_faoi3")
 script = ExtResource("3_td3d4")
 
 [node name="Filters" type="PopupMenu" parent="Background Rect/MenuBar"]
 auto_translate_mode = 1
+theme_override_fonts/font = ExtResource("2_faoi3")
 script = ExtResource("4_t2kuj")
 
 [node name="ClassFilter" type="PopupMenu" parent="Background Rect/MenuBar/Filters"]
+theme_override_fonts/font = ExtResource("2_faoi3")
 script = ExtResource("5_n1qhr")
 
 [node name="TypeFilter" type="PopupMenu" parent="Background Rect/MenuBar/Filters"]
 auto_translate_mode = 1
+theme_override_fonts/font = ExtResource("2_faoi3")
 script = ExtResource("6_xht86")
 
 [node name="DueDateFilter" type="PopupMenu" parent="Background Rect/MenuBar/Filters"]
 auto_translate_mode = 1
+theme_override_fonts/font = ExtResource("2_faoi3")
 script = ExtResource("7_adpv2")
 
 [connection signal="index_pressed" from="Background Rect/MenuBar/Color Theme" to="Background Rect" method="_on_color_theme_index_pressed"]
