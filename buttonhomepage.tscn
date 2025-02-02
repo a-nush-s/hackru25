@@ -40,7 +40,7 @@ script = ExtResource("1_n62e2")
 layout_mode = 0
 offset_top = -6.0
 offset_right = 1154.0
-offset_bottom = 645.0
+offset_bottom = 656.0
 color = Color(0, 0, 0, 1)
 
 [node name="addtaskbtn" type="Button" parent="ColorRect2"]
