@@ -1,6 +1,7 @@
-[gd_scene load_steps=9 format=3 uid="uid://dlut71swxs55i"]
+[gd_scene load_steps=10 format=3 uid="uid://dlut71swxs55i"]
 
 [ext_resource type="FontFile" uid="uid://dfvkfjugp4cx1" path="res://Martian_Mono/MartianMono-VariableFont_wdth,wght.ttf" id="1_s2pc3"]
+[ext_resource type="Script" path="res://taskvisuals.gd" id="1_un2mw"]
 [ext_resource type="Texture2D" uid="uid://bgyl4wsbahf2a" path="res://icons/Lightexclamation(overdue).png" id="2_3sidf"]
 [ext_resource type="Texture2D" uid="uid://b6mabth32b3eg" path="res://Lcheckbox/LightCheckedbox (1).png" id="2_q3gbs"]
 [ext_resource type="Texture2D" uid="uid://5st7nbvqh0vo" path="res://Lcheckbox/LightUncheckedbox (1).png" id="3_bowda"]
@@ -28,28 +29,33 @@ offset_right = -58.0
 offset_bottom = -542.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_un2mw")
 
-[node name="ColorRect2" type="ColorRect" parent="."]
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 0
 offset_left = -132.0
 offset_top = -71.0
 offset_right = 1021.0
 offset_bottom = -14.0
 
-[node name="Panel3" type="Panel" parent="."]
+[node name="ClassNamePanel" type="Panel" parent="."]
+layout_mode = 0
 offset_left = 322.0
 offset_top = -58.0
 offset_right = 481.0
 offset_bottom = -27.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_v4bju")
 
-[node name="Panel4" type="Panel" parent="."]
+[node name="TypeNamePanel" type="Panel" parent="."]
+layout_mode = 0
 offset_left = 497.0
 offset_top = -58.0
 offset_right = 656.0
 offset_bottom = -27.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_v4bju")
 
-[node name="Label5" type="Label" parent="."]
+[node name="TaskName" type="Label" parent="."]
+layout_mode = 0
 offset_left = -76.0
 offset_top = -53.0
 offset_right = 308.0
@@ -58,7 +64,8 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("1_s2pc3")
 text = "name of task (max 32 characters)"
 
-[node name="Label6" type="Label" parent="."]
+[node name="ClassName" type="Label" parent="."]
+layout_mode = 0
 offset_left = 336.0
 offset_top = -53.0
 offset_right = 463.0
@@ -67,7 +74,8 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("1_s2pc3")
 text = "class name"
 
-[node name="Label7" type="Label" parent="."]
+[node name="TypeName" type="Label" parent="."]
+layout_mode = 0
 offset_left = 509.0
 offset_top = -53.0
 offset_right = 636.0
@@ -76,7 +84,8 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("1_s2pc3")
 text = "type name"
 
-[node name="Label8" type="Label" parent="."]
+[node name="Date" type="Label" parent="."]
+layout_mode = 0
 offset_left = 668.0
 offset_top = -53.0
 offset_right = 795.0
@@ -85,7 +94,8 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("1_s2pc3")
 text = "00/00/0000"
 
-[node name="Label9" type="Label" parent="."]
+[node name="StartTime" type="Label" parent="."]
+layout_mode = 0
 offset_left = 805.0
 offset_top = -53.0
 offset_right = 932.0
@@ -95,7 +105,8 @@ theme_override_fonts/font = ExtResource("1_s2pc3")
 text = "00:00
 "
 
-[node name="Label10" type="Label" parent="."]
+[node name="EndTime" type="Label" parent="."]
+layout_mode = 0
 offset_left = 886.0
 offset_top = -53.0
 offset_right = 1013.0
@@ -105,22 +116,26 @@ theme_override_fonts/font = ExtResource("1_s2pc3")
 text = "00:00
 "
 
-[node name="Lightexclamation(overdue)" type="Sprite2D" parent="."]
+[node name="OverdueImg" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(987.042, -43.5313)
 scale = Vector2(0.0457465, 0.0457465)
 texture = ExtResource("2_3sidf")
 
-[node name="Lightmegaphone(today)" type="Sprite2D" parent="."]
+[node name="TodayImg" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(992, -43)
 scale = Vector2(0.0371528, 0.0371528)
 texture = ExtResource("3_m6vv1")
 
-[node name="Lighttimer(soon)" type="Sprite2D" parent="."]
+[node name="SoonImg" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(988, -43)
 scale = Vector2(0.0451389, 0.0451389)
 texture = ExtResource("4_y8yyl")
 
-[node name="CheckButton2" type="CheckButton" parent="."]
+[node name="CheckButton" type="CheckButton" parent="."]
+layout_mode = 0
 offset_left = -130.0
 offset_top = -57.0
 offset_right = -86.0
