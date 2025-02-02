@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://bvibllvhmclpy"]
+[gd_scene load_steps=35 format=3 uid="uid://bvibllvhmclpy"]
 
 [ext_resource type="Script" path="res://buttonhomepage.gd" id="1_n62e2"]
 [ext_resource type="Script" path="res://addtaskbtn.gd" id="2_6ypbg"]
@@ -18,7 +18,42 @@
 [ext_resource type="Texture2D" uid="uid://4tn4bmyfesll" path="res://icons/Darktimer(soon).png" id="14_u0k1f"]
 [ext_resource type="PackedScene" uid="uid://d4h8kiqbgjg4y" path="res://darkaddclass.tscn" id="16_p8bkl"]
 [ext_resource type="PackedScene" uid="uid://ckig1o68rihq4" path="res://darkselect.tscn" id="17_ca0kg"]
-[ext_resource type="PackedScene" uid="uid://m337lb47ywrs" path="res://spawner.tscn" id="19_ula81"]
+[ext_resource type="PackedScene" path="res://spawner.tscn" id="19_ula81"]
+[ext_resource type="PackedScene" uid="uid://bir1dx11p38ax" path="res://darkiconwindow.tscn" id="20_hl6gs"]
+[ext_resource type="Script" path="res://darkiconwindow.gd" id="21_juppo"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7ibkd"]
+bg_color = Color(0.137255, 0.137255, 0.137255, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8pgg3"]
+bg_color = Color(0.137255, 0.137255, 0.137255, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xf0i2"]
+bg_color = Color(0.137255, 0.137255, 0.137255, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k35ao"]
+bg_color = Color(0.137255, 0.137255, 0.137255, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_33iq4"]
+bg_color = Color(0.184314, 0.184314, 0.184314, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8puaf"]
+bg_color = Color(0.136826, 0.136826, 0.136826, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_epfh7"]
+bg_color = Color(0.137255, 0.137255, 0.137255, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4b62y"]
+bg_color = Color(0.137255, 0.137255, 0.137255, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f5rbt"]
+bg_color = Color(0.137255, 0.137255, 0.137255, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hbiyg"]
+bg_color = Color(0.18359, 0.18359, 0.18359, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_52dqg"]
+bg_color = Color(0.184314, 0.184314, 0.184314, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jts4v"]
 bg_color = Color(1, 0.85098, 0.4, 1)
@@ -26,6 +61,9 @@ corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dydo3"]
+bg_color = Color(0.147672, 0.147672, 0.147672, 1)
 
 [node name="buttonhomepagedark" type="Control"]
 layout_mode = 3
@@ -46,9 +84,15 @@ color = Color(0, 0, 0, 1)
 [node name="addtaskbtn" type="Button" parent="ColorRect2"]
 layout_mode = 0
 offset_left = 1046.0
-offset_top = 599.0
-offset_right = 1129.0
-offset_bottom = 639.0
+offset_top = 600.0
+offset_right = 1142.0
+offset_bottom = 640.0
+theme_override_fonts/font = ExtResource("9_0nbh1")
+theme_override_styles/focus = SubResource("StyleBoxFlat_7ibkd")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_8pgg3")
+theme_override_styles/hover = SubResource("StyleBoxFlat_xf0i2")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_k35ao")
+theme_override_styles/normal = SubResource("StyleBoxFlat_33iq4")
 text = "Add Task"
 script = ExtResource("2_6ypbg")
 
@@ -57,22 +101,32 @@ layout_mode = 1
 anchors_preset = -1
 anchor_left = -0.975
 anchor_right = -0.975
-offset_left = 2070.2
+offset_left = 2050.15
 offset_top = 600.0
-offset_right = 2160.2
+offset_right = 2158.15
 offset_bottom = 638.0
+theme_override_fonts/font = ExtResource("9_0nbh1")
+theme_override_styles/focus = SubResource("StyleBoxFlat_8puaf")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_epfh7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_4b62y")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_f5rbt")
+theme_override_styles/normal = SubResource("StyleBoxFlat_hbiyg")
 text = "Add Class"
 script = ExtResource("2_xk1mw")
 
 [node name="MenuBar" type="MenuBar" parent="ColorRect2"]
 layout_mode = 0
-offset_left = 4.0
-offset_top = 2.0
-offset_right = 239.0
-offset_bottom = 39.0
+offset_left = 158.0
+offset_top = 20.0
+offset_right = 394.0
+offset_bottom = 57.0
 theme_override_fonts/font = ExtResource("3_rwg1w")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_52dqg")
+theme_override_styles/hover = SubResource("StyleBoxFlat_52dqg")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_52dqg")
+theme_override_styles/normal = SubResource("StyleBoxFlat_52dqg")
 
-[node name="Color Theme" type="PopupMenu" parent="ColorRect2/MenuBar"]
+[node name="Theme" type="PopupMenu" parent="ColorRect2/MenuBar"]
 auto_translate_mode = 1
 script = ExtResource("3_g208t")
 
@@ -231,7 +285,43 @@ offset_right = 77.0
 offset_bottom = 54.0
 scale = Vector2(0.77663, 0.787678)
 
+[node name="Icon Select" type="Button" parent="."]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 14.0
+offset_right = 152.0
+offset_bottom = 34.0
+theme_override_fonts/font = ExtResource("9_0nbh1")
+theme_override_styles/focus = SubResource("StyleBoxFlat_dydo3")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_dydo3")
+theme_override_styles/hover = SubResource("StyleBoxFlat_dydo3")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_dydo3")
+theme_override_styles/normal = SubResource("StyleBoxFlat_dydo3")
+toggle_mode = true
+text = "Icon Select"
+
+[node name="darkiconwindow" parent="." instance=ExtResource("20_hl6gs")]
+visible = false
+layout_mode = 1
+offset_left = 19.0
+offset_top = 40.0
+offset_right = 19.0
+offset_bottom = 40.0
+script = ExtResource("21_juppo")
+
+[node name="ColorRect" parent="darkiconwindow" index="0"]
+color = Color(0.226707, 0.226707, 0.226707, 0.784314)
+
 [connection signal="pressed" from="ColorRect2/addtaskbtn" to="ColorRect2/addtaskbtn" method="_on_pressed"]
 [connection signal="pressed" from="ColorRect2/addtaskbtn" to="DarkSelect" method="_on_addtaskbtn_pressed"]
 [connection signal="pressed" from="ColorRect2/addclassbtn" to="ColorRect2/addclassbtn" method="_on_pressed"]
 [connection signal="pressed" from="ColorRect2/addclassbtn" to="darkaddclass" method="_on_addclassbtn_pressed"]
+[connection signal="pressed" from="Icon Select" to="darkiconwindow" method="_on_icon_select_pressed"]
+[connection signal="pressed" from="darkiconwindow/DiamondButton" to="darkiconwindow" method="_on_diamond_button_pressed"]
+[connection signal="pressed" from="darkiconwindow/HeartButton" to="darkiconwindow" method="_on_heart_button_pressed"]
+[connection signal="pressed" from="darkiconwindow/SmileyButton" to="darkiconwindow" method="_on_smiley_button_pressed"]
+[connection signal="pressed" from="darkiconwindow/SpiralButton" to="darkiconwindow" method="_on_spiral_button_pressed"]
+[connection signal="pressed" from="darkiconwindow/StarButton" to="darkiconwindow" method="_on_star_button_pressed"]
+[connection signal="pressed" from="darkiconwindow/CloudButton" to="darkiconwindow" method="_on_cloud_button_pressed"]
+
+[editable path="darkiconwindow"]

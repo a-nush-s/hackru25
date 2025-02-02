@@ -22,7 +22,7 @@ grow_vertical = 2
 layout_mode = 0
 offset_right = 298.0
 offset_bottom = 232.0
-color = Color(0, 0, 0, 0.784314)
+color = Color(0.227451, 0.227451, 0.227451, 0.784314)
 
 [node name="DiamondButton" type="Button" parent="."]
 layout_mode = 0

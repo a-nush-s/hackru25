@@ -17,7 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://b6mabth32b3eg" path="res://Lcheckbox/LightCheckedbox (1).png" id="14_8yxog"]
 [ext_resource type="Texture2D" uid="uid://5st7nbvqh0vo" path="res://Lcheckbox/LightUncheckedbox (1).png" id="15_8h4y5"]
 [ext_resource type="PackedScene" uid="uid://uhs7ss75s8ud" path="res://lightaddclass.tscn" id="16_kjbmg"]
-[ext_resource type="PackedScene" uid="uid://m337lb47ywrs" path="res://spawner.tscn" id="17_0l76s"]
+[ext_resource type="PackedScene" path="res://spawner.tscn" id="17_0l76s"]
 [ext_resource type="PackedScene" uid="uid://cx73s3le5lcom" path="res://lightselect.tscn" id="17_50mx5"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ojoxq"]
