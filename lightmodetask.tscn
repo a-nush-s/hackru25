@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://cyrs2va0ctt5j"]
+[gd_scene load_steps=9 format=3 uid="uid://cyrs2va0ctt5j"]
 
 [ext_resource type="FontFile" uid="uid://dfvkfjugp4cx1" path="res://Martian_Mono/MartianMono-VariableFont_wdth,wght.ttf" id="1_s2pc3"]
 [ext_resource type="Script" path="res://taskvisuals.gd" id="1_un2mw"]
@@ -9,13 +9,6 @@
 [ext_resource type="Texture2D" uid="uid://24jan4b4x2w" path="res://icons/Lighttimer(soon).png" id="4_y8yyl"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_rvcn7"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v4bju"]
-bg_color = Color(1, 0.85098, 0.4, 1)
-corner_radius_top_left = 10
-corner_radius_top_right = 10
-corner_radius_bottom_right = 10
-corner_radius_bottom_left = 10
 
 [node name="task_lightmode" type="Control"]
 material = SubResource("CanvasItemMaterial_rvcn7")
@@ -33,21 +26,21 @@ offset_top = -1.0
 offset_right = 1154.0
 offset_bottom = 56.0
 
-[node name="ClassNamePanel" type="Panel" parent="."]
+[node name="ClassNameRect" type="ColorRect" parent="."]
 layout_mode = 0
 offset_left = 455.0
 offset_top = 12.0
 offset_right = 614.0
 offset_bottom = 43.0
-theme_override_styles/panel = SubResource("StyleBoxFlat_v4bju")
+color = Color(1, 0.85098, 0.4, 1)
 
-[node name="TypeNamePanel" type="Panel" parent="."]
+[node name="TypeNameRect" type="ColorRect" parent="."]
 layout_mode = 0
 offset_left = 630.0
 offset_top = 12.0
 offset_right = 789.0
 offset_bottom = 43.0
-theme_override_styles/panel = SubResource("StyleBoxFlat_v4bju")
+color = Color(1, 0.85098, 0.4, 1)
 
 [node name="TaskName" type="Label" parent="."]
 layout_mode = 0
