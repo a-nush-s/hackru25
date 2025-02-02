@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://bvibllvhmclpy"]
+[gd_scene load_steps=42 format=3 uid="uid://bvibllvhmclpy"]
 
 [ext_resource type="Script" path="res://buttonhomepage.gd" id="1_n62e2"]
 [ext_resource type="Script" path="res://addtaskbtn.gd" id="2_6ypbg"]
@@ -6,6 +6,7 @@
 [ext_resource type="Script" path="res://color_theme.gd" id="3_g208t"]
 [ext_resource type="FontFile" uid="uid://cw74yot30uann" path="res://Martian_Mono/static/MartianMono_SemiExpanded-Medium.ttf" id="3_rwg1w"]
 [ext_resource type="Script" path="res://sort_by.gd" id="4_kp8xl"]
+[ext_resource type="PackedScene" uid="uid://bir1dx11p38ax" path="res://darkiconwindow.tscn" id="5_4hl7y"]
 [ext_resource type="Script" path="res://filters.gd" id="5_vvq5h"]
 [ext_resource type="Script" path="res://class_filter.gd" id="6_6bwxl"]
 [ext_resource type="Script" path="res://type_filter.gd" id="7_xdoxs"]
@@ -18,7 +19,55 @@
 [ext_resource type="Texture2D" uid="uid://4tn4bmyfesll" path="res://icons/Darktimer(soon).png" id="14_u0k1f"]
 [ext_resource type="PackedScene" uid="uid://d4h8kiqbgjg4y" path="res://darkaddclass.tscn" id="16_p8bkl"]
 [ext_resource type="PackedScene" uid="uid://ckig1o68rihq4" path="res://darkselect.tscn" id="17_ca0kg"]
+
+[ext_resource type="Theme" uid="uid://bndhnrbtjsebb" path="res://texttheme.tres" id="18_88y1b"]
+[ext_resource type="Script" path="res://icon_select.gd" id="19_wf6cu"]
+[ext_resource type="Script" path="res://darkiconwindow.gd" id="21_p4hyu"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vl5qt"]
+bg_color = Color(0.156863, 0.156863, 0.156863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qdugg"]
+bg_color = Color(0.156863, 0.156863, 0.156863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kpnxi"]
+bg_color = Color(0.156863, 0.156863, 0.156863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hoipn"]
+bg_color = Color(0.156863, 0.156863, 0.156863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6jwv2"]
+bg_color = Color(0.227451, 0.227451, 0.227451, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k0kjc"]
+bg_color = Color(0.156863, 0.156863, 0.156863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6qdrm"]
+bg_color = Color(0.156863, 0.156863, 0.156863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pifgd"]
+bg_color = Color(0.156863, 0.156863, 0.156863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3ne37"]
+bg_color = Color(0.156863, 0.156863, 0.156863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_376la"]
+bg_color = Color(0.227451, 0.227451, 0.227451, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_skoi6"]
+bg_color = Color(0.158472, 0.158472, 0.158472, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x1rki"]
+bg_color = Color(0.156863, 0.156863, 0.156863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7go41"]
+bg_color = Color(0.156863, 0.156863, 0.156863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_30umd"]
+bg_color = Color(0.226707, 0.226708, 0.226707, 1)
+
 [ext_resource type="PackedScene" uid="uid://m337lb47ywrs" path="res://spawner.tscn" id="19_ula81"]
+
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jts4v"]
 bg_color = Color(1, 0.85098, 0.4, 1)
@@ -26,6 +75,21 @@ corner_radius_top_left = 10
 corner_radius_top_right = 10
 corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wmnxi"]
+bg_color = Color(0.156863, 0.156863, 0.156863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7bufn"]
+bg_color = Color(0.156863, 0.156863, 0.156863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5jx20"]
+bg_color = Color(0.156863, 0.156863, 0.156863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1h5gy"]
+bg_color = Color(0.156863, 0.156863, 0.156863, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wji2u"]
+bg_color = Color(0.227451, 0.227451, 0.227451, 1)
 
 [node name="buttonhomepagedark" type="Control"]
 layout_mode = 3
@@ -49,6 +113,11 @@ offset_left = 1046.0
 offset_top = 599.0
 offset_right = 1129.0
 offset_bottom = 639.0
+theme_override_styles/focus = SubResource("StyleBoxFlat_vl5qt")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_qdugg")
+theme_override_styles/hover = SubResource("StyleBoxFlat_kpnxi")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_hoipn")
+theme_override_styles/normal = SubResource("StyleBoxFlat_6jwv2")
 text = "Add Task"
 script = ExtResource("2_6ypbg")
 
@@ -61,18 +130,27 @@ offset_left = 2070.2
 offset_top = 600.0
 offset_right = 2160.2
 offset_bottom = 638.0
+theme_override_styles/focus = SubResource("StyleBoxFlat_k0kjc")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_6qdrm")
+theme_override_styles/hover = SubResource("StyleBoxFlat_pifgd")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_3ne37")
+theme_override_styles/normal = SubResource("StyleBoxFlat_376la")
 text = "Add Class"
 script = ExtResource("2_xk1mw")
 
 [node name="MenuBar" type="MenuBar" parent="ColorRect2"]
 layout_mode = 0
-offset_left = 4.0
-offset_top = 2.0
-offset_right = 239.0
-offset_bottom = 39.0
+offset_left = 164.0
+offset_top = 15.0
+offset_right = 400.0
+offset_bottom = 52.0
 theme_override_fonts/font = ExtResource("3_rwg1w")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_skoi6")
+theme_override_styles/hover = SubResource("StyleBoxFlat_x1rki")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_7go41")
+theme_override_styles/normal = SubResource("StyleBoxFlat_30umd")
 
-[node name="Color Theme" type="PopupMenu" parent="ColorRect2/MenuBar"]
+[node name="Theme" type="PopupMenu" parent="ColorRect2/MenuBar"]
 auto_translate_mode = 1
 script = ExtResource("3_g208t")
 
@@ -95,6 +173,11 @@ script = ExtResource("7_xdoxs")
 [node name="DueDateFilter" type="PopupMenu" parent="ColorRect2/MenuBar/Filters"]
 auto_translate_mode = 1
 script = ExtResource("8_wdu2b")
+
+[node name="MenuButton" type="MenuButton" parent="ColorRect2/MenuBar"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
 
 [node name="ColorRect" type="ColorRect" parent="ColorRect2"]
 layout_mode = 0
@@ -231,7 +314,104 @@ offset_right = 77.0
 offset_bottom = 54.0
 scale = Vector2(0.77663, 0.787678)
 
+[node name="darkiconwindow" parent="ColorRect2" instance=ExtResource("5_4hl7y")]
+visible = false
+layout_mode = 1
+offset_left = -2.0
+offset_top = 5.0
+offset_right = -2.0
+offset_bottom = -31.0
+script = ExtResource("21_p4hyu")
+
+[node name="ColorRect" parent="ColorRect2/darkiconwindow" index="0"]
+offset_left = 19.0
+offset_top = 32.0
+offset_right = 317.0
+offset_bottom = 264.0
+
+[node name="DiamondButton" parent="ColorRect2/darkiconwindow" index="1"]
+layout_mode = 0
+offset_left = 139.0
+offset_top = 62.0
+offset_right = 197.0
+offset_bottom = 120.0
+
+[node name="HeartButton" parent="ColorRect2/darkiconwindow" index="2"]
+layout_mode = 0
+offset_left = 229.0
+offset_top = 62.0
+offset_right = 287.0
+offset_bottom = 120.0
+
+[node name="SmileyButton" parent="ColorRect2/darkiconwindow" index="3"]
+layout_mode = 0
+offset_left = 49.0
+offset_top = 152.0
+offset_right = 107.0
+offset_bottom = 210.0
+
+[node name="SpiralButton" parent="ColorRect2/darkiconwindow" index="4"]
+layout_mode = 0
+offset_left = 139.0
+offset_top = 152.0
+offset_right = 197.0
+offset_bottom = 210.0
+
+[node name="StarButton" parent="ColorRect2/darkiconwindow" index="5"]
+layout_mode = 0
+offset_left = 229.0
+offset_top = 152.0
+offset_right = 287.0
+offset_bottom = 210.0
+
+[node name="CloudButton" parent="ColorRect2/darkiconwindow" index="6"]
+offset_left = 49.0
+offset_top = 62.0
+offset_right = 107.0
+offset_bottom = 120.0
+
+[node name="ToggleBackground" parent="ColorRect2/darkiconwindow" index="7"]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 222.0
+offset_right = 57.0
+offset_bottom = 250.0
+
+[node name="ToggleText" parent="ColorRect2/darkiconwindow" index="8"]
+layout_mode = 0
+offset_left = 57.0
+offset_top = 227.0
+offset_right = 441.0
+offset_bottom = 250.0
+
+[node name="IconSelect" type="Button" parent="ColorRect2"]
+layout_mode = 0
+offset_left = 27.0
+offset_top = 16.0
+offset_right = 159.0
+offset_bottom = 36.0
+theme = ExtResource("18_88y1b")
+theme_override_fonts/font = ExtResource("9_0nbh1")
+theme_override_styles/focus = SubResource("StyleBoxFlat_wmnxi")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_7bufn")
+theme_override_styles/hover = SubResource("StyleBoxFlat_5jx20")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_1h5gy")
+theme_override_styles/normal = SubResource("StyleBoxFlat_wji2u")
+text = "Icon Select"
+script = ExtResource("19_wf6cu")
+
 [connection signal="pressed" from="ColorRect2/addtaskbtn" to="ColorRect2/addtaskbtn" method="_on_pressed"]
 [connection signal="pressed" from="ColorRect2/addtaskbtn" to="DarkSelect" method="_on_addtaskbtn_pressed"]
 [connection signal="pressed" from="ColorRect2/addclassbtn" to="ColorRect2/addclassbtn" method="_on_pressed"]
-[connection signal="pressed" from="ColorRect2/addclassbtn" to="darkaddclass" method="_on_addclassbtn_pressed"]
+[connection signal="pressed" from="ColorRect2/addclassbtn" to="ColorRect2/darkaddclass" method="_on_addclassbtn_pressed"]
+[connection signal="pressed" from="ColorRect2/darkiconwindow/DiamondButton" to="ColorRect2/darkiconwindow" method="_on_diamond_button_pressed"]
+[connection signal="pressed" from="ColorRect2/darkiconwindow/HeartButton" to="ColorRect2/darkiconwindow" method="_on_heart_button_pressed"]
+[connection signal="pressed" from="ColorRect2/darkiconwindow/SmileyButton" to="ColorRect2/darkiconwindow" method="_on_smiley_button_pressed"]
+[connection signal="pressed" from="ColorRect2/darkiconwindow/SpiralButton" to="ColorRect2/darkiconwindow" method="_on_spiral_button_pressed"]
+[connection signal="pressed" from="ColorRect2/darkiconwindow/StarButton" to="ColorRect2/darkiconwindow" method="_on_star_button_pressed"]
+[connection signal="pressed" from="ColorRect2/darkiconwindow/CloudButton" to="ColorRect2/darkiconwindow" method="_on_cloud_button_pressed"]
+[connection signal="pressed" from="ColorRect2/IconSelect" to="ColorRect2/darkiconwindow" method="_on_icon_select_pressed"]
+[connection signal="toggled" from="ColorRect2/IconSelect" to="ColorRect2/darkiconwindow" method="_on_icon_select_toggled"]
+
+[editable path="ColorRect2/darkiconwindow"]
+
