@@ -1,20 +1,17 @@
 extends Control
 
+@onready var color_picker : ColorPickerButton = $ColorPickerButton
+@onready var name_input : LineEdit = $NameInput
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
 func _on_addclassbtn_pressed() -> void:
 	self.show()
+	
 func _on_exit_pressed() -> void:
 	self.hide()
-
-
-func _on_addclassbtn_2_pressed() -> void:
-	self.show()
- # Replace with function body.
+  
+func _on_add_task_button_pressed() -> void:
+	self.hide()
+	var new_class : ClassClass = ClassClass.new()
+	new_class.set_class(self.name_input.text, self.color_picker.color)
+	
+	Global.add_class(new_class)

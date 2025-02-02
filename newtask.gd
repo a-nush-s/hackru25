@@ -21,6 +21,11 @@ func set_default():
 	self.end_input.hide()
 	self.hyphen_label.hide()
 	self.add_task_button.hide()
+	
+	self.select_class.clear()
+	self.select_class.add_item("select class")
+	for c in Global.classes:
+		self.select_class.add_item(c.classclass_name)
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -77,8 +82,11 @@ func _on_add_task_button_pressed() -> void:
 	Global.add_task(new_task)
 	
 	self.hide()
+	
 func _on_addtaskbtn_pressed() -> void:
 	self.show()
+	self.set_default()
+	
 func _on_exit_pressed() -> void:
 	self.hide()
 

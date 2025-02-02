@@ -2,6 +2,7 @@ extends Node
 
 var savedata_path : String = "res://savedata.txt"
 var tasks : Array[Task] = []
+var classes : Array[ClassClass]
 
 var cur_scene_root
 var cur_spawner
@@ -25,12 +26,13 @@ func save_tasks() -> void:
 			
 	file.store_string(content)
 
+func add_class(new_class : ClassClass) -> void:
+	self.classes.append(new_class)
 
 func add_task(new_task : Task) -> void:
 	tasks.append(new_task)
 	if cur_spawner:
 		cur_spawner.new_task(new_task)
-	# TODO: Do stuff
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
