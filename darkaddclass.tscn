@@ -126,3 +126,4 @@ offset_right = 674.0
 offset_bottom = 324.0
 
 [connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="AddClassButton" to="." method="_on_add_class_button_pressed"]

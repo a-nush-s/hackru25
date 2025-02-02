@@ -134,3 +134,4 @@ offset_right = 674.0
 offset_bottom = 324.0
 
 [connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="AddTaskButton" to="." method="_on_add_task_button_pressed"]
