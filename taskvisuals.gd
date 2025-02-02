@@ -43,6 +43,8 @@ func render_task(to_show : Task) -> void:
 	elif diff_time < 259200: # 72 hours
 		self.soon_img.show()
 
+
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.

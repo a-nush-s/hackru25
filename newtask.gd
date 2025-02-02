@@ -74,6 +74,7 @@ func _on_add_task_button_pressed() -> void:
 	
 	var new_task : Task = Task.new()
 	new_task.set_task(new_name, new_class, new_type, start_time, end_time, false)
+	Global.add_task(new_task)
 	
 	self.hide()
 func _on_addtaskbtn_pressed() -> void:

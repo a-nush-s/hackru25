@@ -2,6 +2,7 @@ extends Node
 
 var savedata_path : String = "res://savedata.txt"
 var tasks : Array[Task] = []
+signal generate_new_task
 
 func load_savedata() -> void:
 	var file : FileAccess = FileAccess.open(self.savedata_path, FileAccess.READ)
