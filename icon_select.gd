@@ -11,4 +11,4 @@ func _process(delta: float) -> void:
 	pass
 
 func _on_pressed() -> void:
-	pass # Replace with function body.
+	pass# Replace with function body.

@@ -136,6 +136,7 @@ scale = Vector2(0.0451389, 0.0451389)
 texture = ExtResource("4_yagpi")
 
 [node name="CheckButton" type="CheckButton" parent="."]
+layout_mode = 0
 offset_left = 17.0
 offset_top = 3.0
 offset_right = 49.0
