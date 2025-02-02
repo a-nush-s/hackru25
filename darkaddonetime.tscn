@@ -1,9 +1,9 @@
-[gd_scene load_steps=17 format=3 uid="uid://dyxbga5mc7wfx"]
+[gd_scene load_steps=17 format=3 uid="uid://bffwfubxt568o"]
 
-[ext_resource type="Theme" uid="uid://bndhnrbtjsebb" path="res://texttheme.tres" id="1_otyqo"]
+[ext_resource type="Theme" path="res://texttheme.tres" id="1_otyqo"]
 [ext_resource type="FontFile" uid="uid://dfvkfjugp4cx1" path="res://Martian_Mono/MartianMono-VariableFont_wdth,wght.ttf" id="2_1l4wg"]
 [ext_resource type="Script" path="res://option_button.gd" id="3_uc53f"]
-[ext_resource type="StyleBox" uid="uid://xn88ldf1v5lt" path="res://darkmodebutton.tres" id="4_mwlpa"]
+[ext_resource type="StyleBox" path="res://darkmodebutton.tres" id="4_mwlpa"]
 [ext_resource type="Texture2D" uid="uid://cldwbo81eeep3" path="res://xbutton/darkxbutton (1).png" id="5_sjxap"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rn7sk"]
@@ -64,6 +64,7 @@ offset_bottom = 320.807
 color = Color(0, 0, 0, 0.784314)
 
 [node name="Label4" type="Label" parent="."]
+layout_mode = 0
 offset_left = -9.6938
 offset_top = -23.1927
 offset_right = 478.306
@@ -75,6 +76,7 @@ text = "Add new task:"
 
 [node name="LineEdit" type="LineEdit" parent="."]
 custom_minimum_size = Vector2(100, 0)
+layout_mode = 0
 offset_left = -13.6938
 offset_top = 44.8073
 offset_right = 986.306
@@ -89,6 +91,7 @@ placeholder_text = "Input task name"
 virtual_keyboard_enabled = false
 
 [node name="OptionButton2" type="OptionButton" parent="."]
+layout_mode = 0
 offset_left = -11.6938
 offset_top = 153.807
 offset_right = 920.306
@@ -105,6 +108,7 @@ popup/item_0/text = "select class"
 script = ExtResource("3_uc53f")
 
 [node name="OptionButton3" type="OptionButton" parent="."]
+layout_mode = 0
 offset_left = -10.6938
 offset_top = 265.807
 offset_right = 696.306
@@ -119,6 +123,7 @@ item_count = 1
 popup/item_0/text = "select type"
 
 [node name="LineEdit2" type="LineEdit" parent="."]
+layout_mode = 0
 offset_left = -10.6938
 offset_top = 375.807
 offset_right = 389.306
@@ -134,6 +139,7 @@ placeholder_text = "Enter date"
 virtual_keyboard_enabled = false
 
 [node name="LineEdit3" type="LineEdit" parent="."]
+layout_mode = 0
 offset_left = -10.6938
 offset_top = 468.807
 offset_right = 389.306
@@ -148,6 +154,7 @@ placeholder_text = "Start time"
 virtual_keyboard_enabled = false
 
 [node name="Button" type="Button" parent="."]
+layout_mode = 0
 offset_left = 946.306
 offset_top = -24.1927
 offset_right = 1004.31
@@ -164,6 +171,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_bywlx")
 icon_alignment = 1
 
 [node name="Button2" type="Button" parent="."]
+layout_mode = 0
 offset_left = 695.306
 offset_top = 554.807
 offset_right = 1003.31

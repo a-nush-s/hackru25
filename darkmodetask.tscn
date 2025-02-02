@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://2xidx5rv1u6j"]
+[gd_scene load_steps=10 format=3 uid="uid://clsaa8wn5woi3"]
 
 [ext_resource type="FontFile" uid="uid://dfvkfjugp4cx1" path="res://Martian_Mono/MartianMono-VariableFont_wdth,wght.ttf" id="1_cvwx7"]
 [ext_resource type="Script" path="res://taskvisuals.gd" id="1_pek2s"]

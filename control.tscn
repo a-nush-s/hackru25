@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://dagifxk11mlnr"]
+[gd_scene load_steps=9 format=3 uid="uid://bc8oydu7cwrqq"]
 
 [ext_resource type="Script" path="res://background_rect.gd" id="1_tygqe"]
 [ext_resource type="Script" path="res://color_theme.gd" id="2_catat"]

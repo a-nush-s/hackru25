@@ -1,9 +1,9 @@
-[gd_scene load_steps=14 format=3 uid="uid://bs7uhfnqdksfn"]
+[gd_scene load_steps=14 format=3 uid="uid://dtnpa23k4cm34"]
 
-[ext_resource type="Theme" uid="uid://bndhnrbtjsebb" path="res://texttheme.tres" id="1_jspfh"]
+[ext_resource type="Theme" path="res://texttheme.tres" id="1_jspfh"]
 [ext_resource type="FontFile" uid="uid://dfvkfjugp4cx1" path="res://Martian_Mono/MartianMono-VariableFont_wdth,wght.ttf" id="2_pdu4s"]
 [ext_resource type="Script" path="res://option_button.gd" id="3_5y4ie"]
-[ext_resource type="StyleBox" uid="uid://xn88ldf1v5lt" path="res://darkmodebutton.tres" id="4_7oohh"]
+[ext_resource type="StyleBox" path="res://darkmodebutton.tres" id="4_7oohh"]
 [ext_resource type="Texture2D" uid="uid://cldwbo81eeep3" path="res://xbutton/darkxbutton (1).png" id="5_vovsh"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gbjr5"]
@@ -55,6 +55,7 @@ offset_bottom = 339.0
 color = Color(0, 0, 0, 0.784314)
 
 [node name="Label4" type="Label" parent="."]
+layout_mode = 0
 offset_left = 2.0
 offset_top = -5.0
 offset_right = 490.0
@@ -66,6 +67,7 @@ text = "Add new task:"
 
 [node name="LineEdit" type="LineEdit" parent="."]
 custom_minimum_size = Vector2(100, 0)
+layout_mode = 0
 offset_left = -2.0
 offset_top = 63.0
 offset_right = 998.0
@@ -80,6 +82,7 @@ placeholder_text = "Input task name"
 virtual_keyboard_enabled = false
 
 [node name="OptionButton2" type="OptionButton" parent="."]
+layout_mode = 0
 offset_top = 172.0
 offset_right = 932.0
 offset_bottom = 265.0
@@ -95,6 +98,7 @@ popup/item_0/text = "select class"
 script = ExtResource("3_5y4ie")
 
 [node name="OptionButton3" type="OptionButton" parent="."]
+layout_mode = 0
 offset_left = 1.0
 offset_top = 284.0
 offset_right = 708.0
@@ -109,6 +113,7 @@ item_count = 1
 popup/item_0/text = "select type"
 
 [node name="Button" type="Button" parent="."]
+layout_mode = 0
 offset_left = 958.0
 offset_top = -6.0
 offset_right = 1016.0

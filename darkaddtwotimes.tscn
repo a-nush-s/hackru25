@@ -1,9 +1,9 @@
-[gd_scene load_steps=17 format=3 uid="uid://c26uw0q68rax3"]
+[gd_scene load_steps=17 format=3 uid="uid://bxx1tetdg45k0"]
 
-[ext_resource type="Theme" uid="uid://bndhnrbtjsebb" path="res://texttheme.tres" id="1_64qqo"]
+[ext_resource type="Theme" path="res://texttheme.tres" id="1_64qqo"]
 [ext_resource type="FontFile" uid="uid://dfvkfjugp4cx1" path="res://Martian_Mono/MartianMono-VariableFont_wdth,wght.ttf" id="2_50jct"]
 [ext_resource type="Script" path="res://option_button.gd" id="3_xsi63"]
-[ext_resource type="StyleBox" uid="uid://xn88ldf1v5lt" path="res://darkmodebutton.tres" id="4_k1ndn"]
+[ext_resource type="StyleBox" path="res://darkmodebutton.tres" id="4_k1ndn"]
 [ext_resource type="Texture2D" uid="uid://cldwbo81eeep3" path="res://xbutton/darkxbutton (1).png" id="4_pq8oj"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g3ykt"]
