@@ -12,7 +12,6 @@ func _process(delta: float) -> void:
 
 func _on_diamond_button_pressed() -> void:
 	self.hide() # Replace with function body.
-	icon.change_icon(1)
 
 func _on_heart_button_pressed() -> void:
 	self.hide() # Replace with function body.

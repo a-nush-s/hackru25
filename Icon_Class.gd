@@ -16,35 +16,35 @@ func create_icon_obj() -> void:
 
 func set_images(which: int) -> void:
 	if which==0:
-		smallDark = load("res://smalldarkicons/SDarkCloud.png")
-		smallLight = load("res://smalllighticons/SLightCloud.png")
-		largeDark = load("res://largedarkicons/LDarkCloud.png")
-		largeLight = load("res://largelighticons/LLightCloud.png")
+		smallDark = Image.load_from_file("res://smalldarkicons/SDarkCloud.png")
+		smallLight = Image.load_from_file("res://smalllighticons/SLightCloud.png")
+		largeDark = Image.load_from_file("res://largedarkicons/LDarkCloud.png")
+		largeLight = Image.load_from_file("res://largelighticons/LLightCloud.png")
 	if which==1:
-		smallDark = load("res://smalldarkicons/Sdarkdiamond.png")
-		smallLight = load("res://smalllighticons/Slightdiamond.png")
-		largeDark = load("res://largedarkicons/Ldarkdiamond.png")
-		largeLight = load("res://largelighticons/Llightdiamond.png")
+		smallDark = Image.load_from_file("res://smalldarkicons/Sdarkdiamond.png")
+		smallLight = Image.load_from_file("res://smalllighticons/Slightdiamond.png")
+		largeDark = Image.load_from_file("res://largedarkicons/Ldarkdiamond.png")
+		largeLight = Image.load_from_file("res://largelighticons/Llightdiamond.png")
 	if which==2:
-		smallDark = load("res://smalldarkicons/SDarkHeart.png")
-		smallLight = load("res://smalllighticons/Slightheart.png")
-		largeDark = load("res://largedarkicons/LDarkHeart.png")
-		largeLight = load("res://largelighticons/LLightHeart.png")
+		smallDark = Image.load_from_file("res://smalldarkicons/SDarkHeart.png")
+		smallLight = Image.load_from_file("res://smalllighticons/Slightheart.png")
+		largeDark = Image.load_from_file("res://largedarkicons/LDarkHeart.png")
+		largeLight = Image.load_from_file("res://largelighticons/LLightHeart.png")
 	if which==3:
-		smallDark = load("res://smalldarkicons/Sdarksmiley.png")
-		smallLight = load("res://smalllighticons/Slightsmiley.png")
-		largeDark = load("res://largedarkicons/Ldarksmiley.png")
-		largeLight = load("res://largelighticons/Llightsmiley.png")
+		smallDark = Image.load_from_file("res://smalldarkicons/Sdarksmiley.png")
+		smallLight = Image.load_from_file("res://smalllighticons/Slightsmiley.png")
+		largeDark = Image.load_from_file("res://largedarkicons/Ldarksmiley.png")
+		largeLight = Image.load_from_file("res://largelighticons/Llightsmiley.png")
 	if which==4:
-		smallDark = load("res://smalldarkicons/Sdarkspiral.png")
-		smallLight = load("res://smalllighticons/Slightspiral.png")
-		largeDark = load("res://largedarkicons/Ldarkspiral.png")
-		largeLight = load("res://largelighticons/Llightspiral.png")
+		smallDark = Image.load_from_file("res://smalldarkicons/Sdarkspiral.png")
+		smallLight = Image.load_from_file("res://smalllighticons/Slightspiral.png")
+		largeDark = Image.load_from_file("res://largedarkicons/Ldarkspiral.png")
+		largeLight = Image.load_from_file("res://largelighticons/Llightspiral.png")
 	if which==5:
-		smallDark = load("res://smalldarkicons/Sdarkstar.png")
-		smallLight = load("res://smalllighticons/Slightstar.png")
-		largeDark = load("res://largedarkicons/Ldarkstar.png")
-		largeLight = load("res://largelighticons/Llightstar.png")
+		smallDark = Image.load_from_file("res://smalldarkicons/Sdarkstar.png")
+		smallLight = Image.load_from_file("res://smalllighticons/Slightstar.png")
+		largeDark = Image.load_from_file("res://largedarkicons/Ldarkstar.png")
+		largeLight = Image.load_from_file("res://largelighticons/Llightstar.png")
 	
 func change_icon(which: int) -> void:
 	self.which = which
